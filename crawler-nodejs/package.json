@@ -1,0 +1,15 @@
+{
+  "name": "project-crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matheus Marques",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.1",
+    "crawler": "^1.1.4"
+  }
+}
