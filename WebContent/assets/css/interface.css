@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.resize-lower {
+    display: none;
+}
+
+a {
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1030px) {
+    .resize-upper {
+        display: none;
+    }
+
+    .resize-lower {
+        display: block;
+    }
+}

@@ -1,0 +1,26 @@
+.content-wrapper {
+    background-color: #ecf0f5;;
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    height: 100%;
+}
+.content {
+    margin-top: 50px;
+    width: 90%;
+}
+
+form {
+    border: 1px solid blue;
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px;
+}
+
+form input {
+    margin-bottom: 10px;
+}
+form .form-signin-heading {
+    text-align: center;
+    font-size: 18px;
+}
