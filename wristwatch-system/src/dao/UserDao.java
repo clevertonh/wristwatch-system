@@ -12,24 +12,24 @@ public class UserDao extends DAO<User>{
 	
     private static final String CREATE_QUERY
     = "INSERT INTO wristwatch.user"
-    + "(id, email, password, name, avatar)"
-    + "VALUES (?,md5(?),?,?,?) RETURNING id";
+    + "(email, password, name)"
+    + "VALUES (?,md5(?),?) RETURNING id";
     
     
     private static final String READ_QUERY
-    = "SELECT id, email, password, name, avatar "
+    = "SELECT id, email, password, name "
     + "FROM wristwatch.user "
     + "WHERE id = ?";
 
     
     private static final String UPDATE_QUERY
     = "UPDATE wristwatch.user "
-    + "SET email = ?, avatar = ?, name = ? "
+    + "SET email = ?, name = ? "
     + "WHERE id = ?;";
     
     private static final String UPDATE_WITH_PASSWORD_QUERY
     = "UPDATE wristwatch.user "
-    + "SET email = ?, avatar = ?, name = ?,  password = md5(?) "
+    + "SET email = ?, name = ?,  password = md5(?) "
     + "WHERE id = ?;";
     
     
@@ -45,7 +45,7 @@ public class UserDao extends DAO<User>{
     
     
     private static final String AUTHENTICATE_QUERY
-            = "SELECT id, email, password, name, avatar "
+            = "SELECT id, email, password, name "
             + "FROM wristwatch.user "
             + "WHERE email = ? AND password = md5(?);";
     
@@ -56,11 +56,9 @@ public class UserDao extends DAO<User>{
 	@Override
 	public void create(User element) throws SQLException {
         try (PreparedStatement statement = connection.prepareStatement(CREATE_QUERY);) {
-            statement.setInt(1, element.getId());
-            statement.setString(2, element.getEmail());
-            statement.setString(3, element.getPassword());
-            statement.setString(4, element.getName());
-            statement.setString(5, element.getAvatar());
+            statement.setString(1, element.getEmail());
+            statement.setString(2, element.getPassword());
+            statement.setString(3, element.getName());
 
             try (ResultSet result = statement.executeQuery();) {
                 if (result.next()) {
@@ -82,18 +80,17 @@ public class UserDao extends DAO<User>{
 	}
 
 	@Override
-	public User read(Integer id) throws SQLException {
+	public User read(User element) throws SQLException {
 		User user = new User();
 
         try (PreparedStatement statement = connection.prepareStatement(READ_QUERY)) {
-            statement.setInt(1, id);
+            statement.setInt(1, element.getId());
             try (ResultSet result = statement.executeQuery()) {
                 if (result.next()) {
-                	user.setId(id);
+                	user.setId(element.getId());
                 	user.setEmail(result.getString("email"));
                 	user.setPassword(result.getString("password"));
                 	user.setName(result.getString("name"));
-                	user.setAvatar(result.getString("avatar"));
                 } else {
                     throw new SQLException("Erro ao visualizar: usuário não encontrado.");
                 }
@@ -123,11 +120,10 @@ public class UserDao extends DAO<User>{
 
         try (PreparedStatement statement = connection.prepareStatement(query)) {
             statement.setString(1, element.getEmail());
-            statement.setString(2, element.getAvatar());
-            statement.setString(3, element.getName());
+            statement.setString(2, element.getName());
             
             if (element.getPassword() == null) {
-                statement.setInt(4, element.getId());
+                statement.setInt(3, element.getId());
             } else {
                 statement.setString(4, element.getPassword());
                 statement.setInt(5, element.getId());
@@ -154,9 +150,9 @@ public class UserDao extends DAO<User>{
 	}
 
 	@Override
-	public void delete(Integer id) throws SQLException {
+	public void delete(User element) throws SQLException {
 	       try (PreparedStatement statement = connection.prepareStatement(DELETE_QUERY)) {
-	            statement.setInt(1, id);
+	            statement.setInt(1, element.getId());
 
 	            if (statement.executeUpdate() < 1) {
 	                throw new SQLException("Erro ao excluir: usuário não encontrado.");
@@ -204,7 +200,6 @@ public class UserDao extends DAO<User>{
                 if (result.next()) {
                     user.setId(new Integer(result.getInt("id")));
                     user.setName(result.getString("name"));
-                    user.setAvatar(result.getString("avatar"));
                 } else {
                     throw new SecurityException("Login ou senha incorretos.");
                 }

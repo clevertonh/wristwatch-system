@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import dao.BrandDao;
 import dao.DAOFactory;
 import model.Brand;
 import dao.BrandDao;
@@ -25,6 +24,7 @@ import dao.BrandDao;
 @WebServlet(name = "BrandController", urlPatterns = {"/brand",
 	    "/brand/create",
 	    "/brand/update",
+	    "/brand/set-update",
 	    "/brand/delete",
 	    "/brand/read",
 	    "/brand/listAll"
@@ -51,37 +51,50 @@ public class BrandController extends HttpServlet {
 		Brand brand = new Brand();
         
 		switch(request.getServletPath()) {
-		case "/brand":			
-			break;
-			
-		case "/brand/create":
-			brand.setName(request.getParameter("name"));
-			brand.setCountry(request.getParameter("country"));
-			
-            try (DAOFactory daoFactory = new DAOFactory()) {
-
-                dao = daoFactory.getBrandDao();
-
-                dao.create(brand);
-
-                session.setAttribute("error", "Marca cadastrada com sucesso!");
-            } catch (ClassNotFoundException | IOException | SQLException ex) {
-                session.setAttribute("error", ex.getMessage());
-            }
-            
-            dispatcher = request.getRequestDispatcher("/view/brand-list.jsp");
-			dispatcher.forward(request, response);
-			break;
-			
-		case "/brand/update":
-			break;
 			
 		case "/brand/delete":
+			try (DAOFactory daoFactory = new DAOFactory()) {
+                dao = daoFactory.getBrandDao();
+                brand.setName(request.getParameter("name"));
+                dao.delete(brand);
+                
+                response.sendRedirect(request.getContextPath() + "/view/home");
+            } catch (ClassNotFoundException | IOException | SQLException | SecurityException ex) {
+                session.setAttribute("error", ex.getMessage());
+                response.sendRedirect(request.getContextPath() + "/view/home");
+            }
+			
 			break;
 			
 		case "/brand/read":
+			try (DAOFactory daoFactory = new DAOFactory()) {
+                dao = daoFactory.getBrandDao();
+                brand.setName(request.getParameter("name"));
+                dao.read(brand);
+                
+                response.sendRedirect(request.getContextPath() + "/view/home");
+            } catch (ClassNotFoundException | IOException | SQLException | SecurityException ex) {
+                session.setAttribute("error", ex.getMessage());
+                response.sendRedirect(request.getContextPath() + "/view/home");
+            }
 			break;
 			
+		case "/brand/set-update":
+           try (DAOFactory daoFactory = new DAOFactory()) {
+
+                dao = daoFactory.getBrandDao();
+                brand.setName(request.getParameter("name"));
+                brand = dao.read(brand);
+
+                request.setAttribute("brand", brand);
+            } catch (ClassNotFoundException | IOException | SQLException ex) {
+                request.setAttribute("error", ex.getMessage());
+            }
+	           
+			dispatcher = request.getRequestDispatcher("/view/brand-update.jsp");
+			dispatcher.forward(request, response);
+			break;
+				
 		case "/brand/listAll":
 
 			try (DAOFactory daoFactory = new DAOFactory()) {
@@ -107,38 +120,47 @@ public class BrandController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		BrandDao dao;
 		RequestDispatcher dispatcher;
+		HttpSession session = request.getSession();
+		Brand brand = new Brand();
 		
 		switch(request.getServletPath()) {
-		case "/brand":
-			break;
-			
 		case "/brand/create":
+			brand.setName(request.getParameter("name"));
+			brand.setCountry(request.getParameter("country"));
+			
+            try (DAOFactory daoFactory = new DAOFactory()) {
+
+                dao = daoFactory.getBrandDao();
+
+                dao.create(brand);
+
+                session.setAttribute("error", "Marca cadastrada com sucesso!");
+            } catch (ClassNotFoundException | IOException | SQLException ex) {
+                session.setAttribute("error", ex.getMessage());
+            }
+            
+            dispatcher = request.getRequestDispatcher("/view/brand-list.jsp");
+			dispatcher.forward(request, response);
 			break;
 			
 		case "/brand/update":
-			break;
+			brand.setName(request.getParameter("name"));
+			brand.setCountry(request.getParameter("country"));
 			
-		case "/brand/delete":
-			break;
-			
-		case "/brand/read":
-			break;
-			
-		case "/brand/listAll":
+            try (DAOFactory daoFactory = new DAOFactory()) {
 
-			try (DAOFactory daoFactory = new DAOFactory()) {
                 dao = daoFactory.getBrandDao();
-                
-                List<Brand> daoList = dao.all();
-                
-                request.setAttribute("brandList", daoList);
-            } catch (ClassNotFoundException | IOException | SQLException | SecurityException ex) {
-            	request.getSession().setAttribute("error", ex.getMessage());
+
+                dao.update(brand);
+
+                session.setAttribute("error", "Marca atualizada com sucesso!");
+            } catch (ClassNotFoundException | IOException | SQLException ex) {
+                session.setAttribute("error", ex.getMessage());
             }
-			
-			dispatcher = request.getRequestDispatcher("/view/brand-list.jsp");
-			dispatcher.forward(request, response);
+
+            response.sendRedirect(request.getContextPath() + "/brand/listAll");
 			break;
+			
 		}
 }
 

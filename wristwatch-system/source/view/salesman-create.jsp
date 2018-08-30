@@ -8,21 +8,21 @@
 
 <%@include  file="home-open.jsp" %>
 
-      <form action="${pageContext.servletContext.contextPath}/brand/create" method="POST">
-          <h2 class="form-signin-heading">Informe os dados cadastrais da marca</h2>
+      <form action="${pageContext.servletContext.contextPath}/salesman/create" method="POST">
+          <h2 class="form-signin-heading">Informe os dados cadastrais do revendedor</h2>
            <div class="form-group">
 			    <label for="inputName">Nome*</label>
-			    <input type="text" name="name" class="form-control" id="inputName" placeholder="Nome">
+			    <input type="text" name="name" class="form-control" id="inputName" placeholder="Nome" required>
 	 		</div>
 
            <div class="form-group">
-	   			<label for="inputQtdProduct">Quantidade de Produtos</label>
-	   	   <input type="number" name="qtdProducts" class="form-control" id="inputQtdProduct" placeholder="Produtos">
+	   			<label for="inputQtdProduct">Quantidade de Produtos*</label>
+	   	   <input type="number" name="qtdProducts" class="form-control" id="inputQtdProduct" placeholder="Produtos" required>
 	 	  </div>
 	 	   
            <div class="form-group">
-	   			<label for="inputQtdBrands">Quantidade de Marcas</label>
-	   	   <input type="number" name="qtdBrands" class="form-control" id="inputQtdBrands" placeholder="Marcas">
+	   			<label for="inputQtdBrands">Quantidade de Marcas*</label>
+	   	   <input type="number" name="qtdBrands" class="form-control" id="inputQtdBrands" placeholder="Marcas" required>
 	 	  </div>
 	 	  
 		  <button type="submit" class="btn btn-primary">Cadastrar</button>

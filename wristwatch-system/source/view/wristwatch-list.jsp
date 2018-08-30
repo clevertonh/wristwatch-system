@@ -6,7 +6,7 @@
 
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 
-<% List<Wristwatch> wristWatchList = (List<Wristwatch>) request.getSession().getAttribute("wristWatchList"); %>
+<% List<Wristwatch> wristwatchList = (List<Wristwatch>) request.getSession().getAttribute("wristwatchList"); %>
 
 <%@include  file="home-open.jsp" %>
 
@@ -24,16 +24,16 @@
   </thead>
   <tbody>
   <c:set var="count" value="1" scope="page" />
-  <c:forEach items="${wristWatchList}" var="wristwatch">
+  <c:forEach items="${wristwatchList}" var="wristwatch">
   
   	<tr>
       <th scope="row"><c:out value="${count}" /><c:set var="count" value="${count + 1}" scope="page"/></th>
       <td> <c:out value="${wristwatch.name}" /> </td>
-      <td><a href="#">#</a></td>
-      <td><a href="#">#</a></td>
-      <td><a href="#">#</a></td>
-      <td><a href="#">Atualizar</a></td>
-      <td><a href="#">Excluir</a></td>
+      <td> <c:out value="${wristwatch.brand_name}" /> </td>
+      <td> <c:out value="${wristwatch.salesman_name}" /> </td>
+      <td> <c:out value="${wristwatch.price}" /> </td>
+      <td><a style="color:#007bff" href="${pageContext.servletContext.contextPath}/wristwatch/set-update?id=<c:out value="${wristwatch.id}" />">Atualizar</a></td>
+      <td><a style="color:#007bff" href="${pageContext.servletContext.contextPath}/wristwatch/delete?id=<c:out value="${wristwatch.id}" />">Excluir</a></td>
     </tr>
   
   </c:forEach>

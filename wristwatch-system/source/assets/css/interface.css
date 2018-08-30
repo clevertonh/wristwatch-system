@@ -21,6 +21,7 @@ a:link {
     text-decoration: none;
 }
 
+
 @media only screen and (max-width: 1030px) {
     .resize-upper {
         display: none;

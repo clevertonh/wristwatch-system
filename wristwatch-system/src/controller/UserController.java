@@ -41,20 +41,21 @@ public class UserController extends HttpServlet {
 		RequestDispatcher dispatcher;
 		
 		switch(request.getServletPath()) {
-		case "/user":
-			break;
-			
-		case "/user/create":
-			break;
-			
-		case "/user/update":
-			break;
-			
 		case "/user/delete":
+			try (DAOFactory daoFactory = new DAOFactory()) {
+                dao = daoFactory.getUserDao();
+                User user = new User();
+                user.setId(Integer.parseInt(request.getParameter("id")));
+                dao.delete(user);
+                
+                response.sendRedirect(request.getContextPath() + "/view/home");
+            } catch (ClassNotFoundException | IOException | SQLException | SecurityException ex) {
+                session.setAttribute("error", ex.getMessage());
+                response.sendRedirect(request.getContextPath() + "/view/home");
+            }
+			
 			break;
 			
-		case "/user/read":
-			break;
 			
 		case "/user/listAll":
 
@@ -103,12 +104,24 @@ public class UserController extends HttpServlet {
 			break;
 			
 		case "/user/update":
-			break;
+			user.setId(Integer.parseInt(request.getParameter("id")));
+			user.setName(request.getParameter("name"));
+			user.setEmail(request.getParameter("email"));
+			user.setPassword(request.getParameter("password"));
 			
-		case "/user/delete":
-			break;
-			
-		case "/user/listAll":
+            try (DAOFactory daoFactory = new DAOFactory()) {
+
+                dao = daoFactory.getUserDao();
+
+                dao.update(user);
+
+                response.sendRedirect(request.getContextPath() + "/view");
+                session.setAttribute("user", user);
+            } catch (ClassNotFoundException | IOException | SQLException ex) {
+                session.setAttribute("error", ex.getMessage());
+                response.sendRedirect(request.getContextPath() + "/view/home");
+            }
+
 			break;
 			
 		}

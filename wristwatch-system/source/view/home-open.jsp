@@ -19,7 +19,7 @@
     <div class="wrapper">
         <header class="main-header">
             <!-- Logo -->
-            <a href="#" class="logo">
+            <a href="${pageContext.servletContext.contextPath}/view/home.jsp" class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
                 <span class="logo-mini resize-lower">
                     <b>WS</b>
@@ -58,7 +58,7 @@
                     <li class="header resize-upper">MENU PRINCIPAL</li>
                     <li class="header resize-lower">MP</li>
                     <li class="treeview active">
-                        <a href="home.jsp">
+                        <a href="${pageContext.servletContext.contextPath}/view/home.jsp">
                             <i class="fa fa-dashboard"></i>
                             <span class="resize-upper">Home</span>
                             <span class="resize-lower">H</span>
@@ -74,8 +74,8 @@
 		                            <span class="resize-lower">U</span>
 	                            </div>
 	                            <div class="dropdown-menu">
-							        <a class="dropdown-item" href="user-create.jsp">Criar</a>
-							        <a class="dropdown-item" href="home.jsp">Atualizar</a>
+							        <a class="dropdown-item" href="${pageContext.servletContext.contextPath}/view/user-create">Criar</a>
+							        <a class="dropdown-item" href="${pageContext.servletContext.contextPath}/view/home.jsp">Atualizar</a>
 							        <a class="dropdown-item" href="${pageContext.servletContext.contextPath}/user/listAll">Listar</a>
 							    </div>
                             </div>
@@ -91,8 +91,8 @@
 		                            <span class="resize-lower">R</span>
 	                            </div>
 	                            <div class="dropdown-menu">
-							        <a class="dropdown-item" href="wristwatch-create.jsp">Criar</a>
-							        <a class="dropdown-item" href="wristwatch-list.jsp">Listar</a>
+							        <a class="dropdown-item" href="${pageContext.servletContext.contextPath}/wristwatch/set-create">Criar</a>
+							        <a class="dropdown-item" href="${pageContext.servletContext.contextPath}/wristwatch/listAll">Listar</a>
 							    </div>
                             </div>
                         </a>
@@ -107,7 +107,7 @@
 		                            <span class="resize-lower">M</span>
 	                            </div>
 	                            <div class="dropdown-menu">
-							        <a class="dropdown-item" href="brand-create.jsp">Criar</a>
+							        <a class="dropdown-item" href="${pageContext.servletContext.contextPath}/view/brand-create.jsp">Criar</a>
 							        <a class="dropdown-item" href="${pageContext.servletContext.contextPath}/brand/listAll">Listar</a>
 							    </div>
                             </div>
@@ -123,8 +123,8 @@
 		                            <span class="resize-lower">V</span>
 	                            </div>
 	                            <div class="dropdown-menu">
-							        <a class="dropdown-item" href="salesman-create.jsp">Criar</a>
-							        <a class="dropdown-item" href="salesman-list.jsp">Listar</a>
+							        <a class="dropdown-item" href="${pageContext.servletContext.contextPath}/view/salesman-create.jsp">Criar</a>
+							        <a class="dropdown-item" href="${pageContext.servletContext.contextPath}/salesman/listAll">Listar</a>
 							    </div>
                             </div>
                         </a>

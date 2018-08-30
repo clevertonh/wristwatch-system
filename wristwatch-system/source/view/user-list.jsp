@@ -27,7 +27,7 @@
       <th scope="row"><c:out value="${count}" /><c:set var="count" value="${count + 1}" scope="page"/></th>
       <td> <c:out value="${user.name}" /> </td>
       <td> <c:out value="${user.email}" /> </td>
-      <td><a href="#">Excluir</a></td>
+      <td><a style="color:#007bff" href="${pageContext.servletContext.contextPath}/user/delete?id=<c:out value="${user.id}" />">Excluir</a></td>
     </tr>
   
   </c:forEach>

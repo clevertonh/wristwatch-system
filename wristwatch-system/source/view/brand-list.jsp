@@ -16,7 +16,6 @@
       <th scope="col">#</th>
       <th scope="col">Nome</th>
       <th scope="col">Pais</th>
-      <th scope="col">Quantidade De Produtos</th>
       <th scope="col">Atualizar</th>
       <th scope="col">Excluir</th>
     </tr>
@@ -29,9 +28,8 @@
       <th scope="row"><c:out value="${count}" /><c:set var="count" value="${count + 1}" scope="page"/></th>
       <td> <c:out value="${brand.name}" /> </td>
       <td> <c:out value="${brand.country}" /> </td>
-      <td><a href="#">#</a></td>
-      <td><a href="#">Atualizar</a></td>
-      <td><a href="#">Excluir</a></td>
+      <td><a style="color:#007bff"  href="${pageContext.servletContext.contextPath}/brand/set-update?name=<c:out value="${brand.name}" />">Atualizar</a></td>
+      <td><a style="color:#007bff" href="${pageContext.servletContext.contextPath}/brand/delete?name=<c:out value="${brand.name}" />">Excluir</a></td>
     </tr>
   
   </c:forEach>

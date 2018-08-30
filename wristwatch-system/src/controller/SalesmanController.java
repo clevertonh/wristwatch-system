@@ -23,6 +23,7 @@ import model.Salesman;
 @WebServlet(name = "SalesmanController", urlPatterns = {"/salesman",
 	    "/salesman/create",
 	    "/salesman/update",
+	    "/salesman/set-update",
 	    "/salesman/delete",
 	    "/salesman/read",
 	    "/salesman/listAll"
@@ -48,19 +49,15 @@ public class SalesmanController extends HttpServlet {
         SalesmanDao dao;
 
 		switch(request.getServletPath()) {
-		case "/salesman":			
-			break;
-			
-		case "/salesman/create":
-			salesman.setName(request.getParameter("name"));
-			
-            try (DAOFactory daoFactory = new DAOFactory()) {
+
+		case "/salesman/delete":
+           try (DAOFactory daoFactory = new DAOFactory()) {
 
                 dao = daoFactory.getSalesmanDao();
+                salesman.setName(request.getParameter("name"));
+                dao.delete(salesman);
 
-                dao.create(salesman);
-
-                session.setAttribute("error", "Revendedor cadastrado com sucesso!");
+                session.setAttribute("error", "Revendedor removido com sucesso!");
             } catch (ClassNotFoundException | IOException | SQLException ex) {
                 session.setAttribute("error", ex.getMessage());
             }
@@ -69,13 +66,35 @@ public class SalesmanController extends HttpServlet {
 			dispatcher.forward(request, response);
 			break;
 			
-		case "/salesman/update":
-			break;
-			
-		case "/salesman/delete":
-			break;
-			
 		case "/salesman/read":
+           try (DAOFactory daoFactory = new DAOFactory()) {
+
+                dao = daoFactory.getSalesmanDao();
+                salesman.setName(request.getParameter("name"));
+                 salesman = dao.read(salesman);
+
+                session.setAttribute("salesman", salesman);
+            } catch (ClassNotFoundException | IOException | SQLException ex) {
+                session.setAttribute("error", ex.getMessage());
+            }
+            
+            dispatcher = request.getRequestDispatcher("/view/salesman-list.jsp");
+			dispatcher.forward(request, response);
+			break;
+		case "/salesman/set-update":
+           try (DAOFactory daoFactory = new DAOFactory()) {
+
+                dao = daoFactory.getSalesmanDao();
+                salesman.setName(request.getParameter("name"));
+                salesman = dao.read(salesman);
+
+                request.setAttribute("salesman", salesman);
+            } catch (ClassNotFoundException | IOException | SQLException ex) {
+                request.setAttribute("error", ex.getMessage());
+            }
+	           
+			dispatcher = request.getRequestDispatcher("/view/salesman-update.jsp");
+			dispatcher.forward(request, response);
 			break;
 			
 		case "/salesman/listAll":
@@ -106,11 +125,11 @@ public class SalesmanController extends HttpServlet {
         SalesmanDao dao;
 
 		switch(request.getServletPath()) {
-		case "/salesman":			
-			break;
 			
 		case "/salesman/create":
 			salesman.setName(request.getParameter("name"));
+			salesman.setQtdBrands(Integer.parseInt(request.getParameter("qtdBrands")));
+			salesman.setQtdProducts(Integer.parseInt(request.getParameter("qtdProducts")));
 			
             try (DAOFactory daoFactory = new DAOFactory()) {
 
@@ -128,29 +147,24 @@ public class SalesmanController extends HttpServlet {
 			break;
 			
 		case "/salesman/update":
-			break;
+			salesman.setName(request.getParameter("name"));
+			salesman.setQtdBrands(Integer.parseInt(request.getParameter("qtdBrands")));
+			salesman.setQtdProducts(Integer.parseInt(request.getParameter("qtdProducts")));
 			
-		case "/salesman/delete":
-			break;
-			
-		case "/salesman/read":
-			break;
-			
-		case "/salesman/listAll":
+            try (DAOFactory daoFactory = new DAOFactory()) {
 
-			try (DAOFactory daoFactory = new DAOFactory()) {
-				dao = daoFactory.getSalesmanDao();
-                
-                List<Salesman> daoList = dao.all();
-                
-                request.setAttribute("salesmanList", daoList);
-            } catch (ClassNotFoundException | IOException | SQLException | SecurityException ex) {
-            	session.setAttribute("error", ex.getMessage());
+                dao = daoFactory.getSalesmanDao();
+
+                dao.update(salesman);
+
+                session.setAttribute("error", "Revendedor atualizado com sucesso!");
+            } catch (ClassNotFoundException | IOException | SQLException ex) {
+                session.setAttribute("error", ex.getMessage());
             }
-
-			dispatcher = request.getRequestDispatcher("/view/salesman-list.jsp");
-			dispatcher.forward(request, response);
+            
+            response.sendRedirect(request.getContextPath() + "/salesman/listAll");
 			break;
+			
 		}
 	}
 

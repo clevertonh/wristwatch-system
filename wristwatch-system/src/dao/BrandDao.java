@@ -15,29 +15,29 @@ public class BrandDao extends DAO<Brand>{
 	
     private static final String CREATE_QUERY
     = "INSERT INTO wristwatch.brand"
-    + "(id, name, country)"
-    + "VALUES (?,?,?) RETURNING id";
+    + "(name, country)"
+    + "VALUES (?,?) RETURNING name";
     
     
     private static final String READ_QUERY
-    = "SELECT id, name, country "
+    = "SELECT name, country "
     + "FROM wristwatch.brand "
-    + "WHERE id = ?";
+    + "WHERE name = ?";
 
     
     private static final String UPDATE_QUERY
     = "UPDATE wristwatch.brand "
-    + "SET name = ?, country = ? "
-    + "WHERE id = ?;";
+    + "SET country = ? "
+    + "WHERE name = ?;";
     
 
     private static final String DELETE_QUERY
     = "DELETE FROM wristwatch.brand "
-    + "WHERE id = ?;";
+    + "WHERE name = ?;";
     
     
     private static final String ALL_QUERY
-    = "SELECT id, name, country "
+    = "SELECT name, country "
     + "FROM wristwatch.brand "
     + "ORDER BY name;";
     
@@ -50,13 +50,12 @@ public class BrandDao extends DAO<Brand>{
 	@Override
 	public void create(Brand element) throws SQLException {
 		try (PreparedStatement statement = connection.prepareStatement(CREATE_QUERY);) {
-            statement.setInt(1, element.getId());
-            statement.setString(2, element.getName());
-            statement.setString(3, element.getCountry());
+            statement.setString(1, element.getName());
+            statement.setString(2, element.getCountry());
 
             try (ResultSet result = statement.executeQuery();) {
                 if (result.next()) {
-                    element.setId(result.getInt("id"));
+                    element.setName(result.getString("name"));
                 }
             }
         } catch (SQLException ex) {
@@ -74,14 +73,13 @@ public class BrandDao extends DAO<Brand>{
 	}
 
 	@Override
-	public Brand read(Integer id) throws SQLException {
+	public Brand read(Brand element) throws SQLException {
 		Brand brand = new Brand();
 
         try (PreparedStatement statement = connection.prepareStatement(READ_QUERY)) {
-            statement.setInt(1, id);
+            statement.setString(1, element.getName());
             try (ResultSet result = statement.executeQuery()) {
                 if (result.next()) {
-                	brand.setId(id);
                 	brand.setName(result.getString("name"));
                 	brand.setCountry(result.getString("country"));
                 } else {
@@ -104,10 +102,8 @@ public class BrandDao extends DAO<Brand>{
 	@Override
 	public void update(Brand element) throws SQLException {
         try (PreparedStatement statement = connection.prepareStatement(UPDATE_QUERY)) {
-            statement.setString(1, element.getName());
-            statement.setString(2, element.getCountry());
-            statement.setInt(3, element.getId());
-            
+            statement.setString(1, element.getCountry());
+            statement.setString(2, element.getName());
             
             if (statement.executeUpdate() < 1) {
                 throw new SQLException("Erro ao editar: marca não encontrado.");
@@ -130,9 +126,9 @@ public class BrandDao extends DAO<Brand>{
 	}
 
 	@Override
-	public void delete(Integer id) throws SQLException {
+	public void delete(Brand element) throws SQLException {
 	       try (PreparedStatement statement = connection.prepareStatement(DELETE_QUERY)) {
-	            statement.setInt(1, id);
+	            statement.setString(1, element.getName());
 
 	            if (statement.executeUpdate() < 1) {
 	                throw new SQLException("Erro ao excluir: marca não encontrado.");
@@ -158,7 +154,6 @@ public class BrandDao extends DAO<Brand>{
             while (result.next()) {
             	Brand brand = new Brand();
             	
-            	brand.setId(result.getInt("id"));
             	brand.setName(result.getString("name"));
             	brand.setCountry(result.getString("Country"));
 

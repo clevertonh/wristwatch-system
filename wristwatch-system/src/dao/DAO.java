@@ -13,9 +13,9 @@ public abstract class DAO<T> {
     }
     
     public abstract void create(T element) throws SQLException;
-    public abstract T read(Integer id) throws SQLException;
+    public abstract T read(T element) throws SQLException;
     public abstract void update(T element) throws SQLException;
-    public abstract void delete(Integer id) throws SQLException;
+    public abstract void delete(T id) throws SQLException;
 
     public abstract List<T> all() throws SQLException;
 	

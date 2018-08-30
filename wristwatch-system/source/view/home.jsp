@@ -11,11 +11,8 @@
 		type="email" id="inputEmail" class="form-control" placeholder="Email"
 		autofocus> <label for="inputPassword1" class="sr-only">Senha</label>
 	<input type="password" id="inputPassword1" class="form-control"
-		placeholder="Senha"> <label for="inputPassword2"
-		class="sr-only">Senha</label> <input type="password"
-		id="inputPassword2" class="form-control" placeholder="Repita a Senha">
-	<label for="picture" class="sr-only">Imagem</label> <input type="file"
-		id="picture" class="form-control" placeholder="Foto">
+		placeholder="Senha">
+
 	<button class="btn btn-lg btn-primary btn-block" type="submit">Cadastrar</button>
 </form>
 

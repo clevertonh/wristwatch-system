@@ -16,31 +16,31 @@ public class SalesmanDao extends DAO<Salesman>{
 	
     private static final String CREATE_QUERY
     = "INSERT INTO wristwatch.salesman"
-    + "(id, name,  qtdProducts, qtdBrands)"
-    + "VALUES (?,?,?,?) RETURNING id";
+    + "(name,  qtd_products, qtd_brands)"
+    + "VALUES (?,?,?) RETURNING name";
     
     
     private static final String READ_QUERY
-    = "SELECT id, name, qtdProducts, qtdBrands "
+    = "SELECT name, qtd_products, qtd_brands "
     + "FROM wristwatch.salesman "
-    + "WHERE id = ?";
+    + "WHERE name = ?";
 
     
     private static final String UPDATE_QUERY
     = "UPDATE wristwatch.salesman "
-    + "SET name = ?, qtdProducts = ?, qtdBrands = ? "
-    + "WHERE id = ?;";
+    + "SET qtd_products = ?, qtd_brands = ? "
+    + "WHERE name = ?;";
     
 
     private static final String DELETE_QUERY
     = "DELETE FROM wristwatch.salesman "
-    + "WHERE id = ?;";
+    + "WHERE name = ?;";
     
     
     private static final String ALL_QUERY
-    = "SELECT id, name, qtdProducts, qtdBrands "
+    = "SELECT name, qtd_products, qtd_brands "
     + "FROM wristwatch.salesman "
-    + "ORDER BY email;";
+    + "ORDER BY name;";
     
     
 	SalesmanDao(Connection connection) {
@@ -52,15 +52,14 @@ public class SalesmanDao extends DAO<Salesman>{
 	public void create(Salesman element) throws SQLException {
 		
         try (PreparedStatement statement = connection.prepareStatement(CREATE_QUERY);) {
-            statement.setInt(1, element.getId());
-            statement.setString(2, element.getName());
-            statement.setInt(3, element.getQtdProducts());
-            statement.setInt(4, element.getQtdBrands());
+            statement.setString(1, element.getName());
+            statement.setInt(2, element.getQtdProducts());
+            statement.setInt(3, element.getQtdBrands());
 
 
             try (ResultSet result = statement.executeQuery();) {
                 if (result.next()) {
-                    element.setId(result.getInt("id"));
+                    element.setName(result.getString("name"));
                 }
             }
         } catch (SQLException ex) {
@@ -76,17 +75,16 @@ public class SalesmanDao extends DAO<Salesman>{
 	}
 
 	@Override
-	public Salesman read(Integer id) throws SQLException {
+	public Salesman read(Salesman element) throws SQLException {
 		Salesman salesman = new Salesman();
 
         try (PreparedStatement statement = connection.prepareStatement(READ_QUERY)) {
-            statement.setInt(1, id);
+            statement.setString(1, element.getName());
             try (ResultSet result = statement.executeQuery()) {
                 if (result.next()) {
-                	salesman.setId(id);
                 	salesman.setName(result.getString("name"));
-                	salesman.setQtdProducts(result.getInt("qtdProducts"));
-                	salesman.setQtdBrands(result.getInt("qtdBrands"));
+                	salesman.setQtdProducts(result.getInt("qtd_products"));
+                	salesman.setQtdBrands(result.getInt("qtd_brands"));
                 } else {
                     throw new SQLException("Erro ao visualizar: vendedor não encontrado.");
                 }
@@ -107,11 +105,9 @@ public class SalesmanDao extends DAO<Salesman>{
 	@Override
 	public void update(Salesman element) throws SQLException {
 		 try (PreparedStatement statement = connection.prepareStatement(UPDATE_QUERY)) {
-	            statement.setString(1, element.getName());
-	            statement.setInt(2, element.getQtdProducts());
-	            statement.setInt(3, element.getQtdBrands());
-	            statement.setInt(4, element.getId());
-	            
+	            statement.setInt(1, element.getQtdProducts());
+	            statement.setInt(2, element.getQtdBrands());
+	            statement.setString(3, element.getName());
 	            
 	            if (statement.executeUpdate() < 1) {
 	                throw new SQLException("Erro ao editar: vendedor não encontrado.");
@@ -132,9 +128,9 @@ public class SalesmanDao extends DAO<Salesman>{
 	}
 
 	@Override
-	public void delete(Integer id) throws SQLException {
+	public void delete(Salesman element) throws SQLException {
 	       try (PreparedStatement statement = connection.prepareStatement(DELETE_QUERY)) {
-	            statement.setInt(1, id);
+	            statement.setString(1, element.getName());
 
 	            if (statement.executeUpdate() < 1) {
 	                throw new SQLException("Erro ao excluir: vendedor não encontrado.");
@@ -154,20 +150,19 @@ public class SalesmanDao extends DAO<Salesman>{
 
 	@Override
 	public List<Salesman> all() throws SQLException {
-        List<Salesman> salesman = new ArrayList<>();
+        List<Salesman> salesmanList = new ArrayList<>();
 
         try (PreparedStatement statement = connection.prepareStatement(ALL_QUERY);
                 ResultSet result = statement.executeQuery()) {
             while (result.next()) {
-            	Salesman wristwatch = new Salesman();
+            	Salesman salesman = new Salesman();
             	
-            	wristwatch.setId(result.getInt("id"));
-            	wristwatch.setName(result.getString("name"));
-            	wristwatch.setQtdProducts(result.getInt("qtdProducts"));
-            	wristwatch.setQtdBrands(result.getInt("qtdBrands"));
+            	salesman.setName(result.getString("name"));
+            	salesman.setQtdProducts(result.getInt("qtd_products"));
+            	salesman.setQtdBrands(result.getInt("qtd_brands"));
 
 
-                salesman.add(wristwatch);
+                salesmanList.add(salesman);
             }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
@@ -175,7 +170,7 @@ public class SalesmanDao extends DAO<Salesman>{
             throw new SQLException("Erro ao listar vendedor.");
         }
 
-        return salesman;
+        return salesmanList;
 	}
 
 }

@@ -7,7 +7,8 @@ public class Wristwatch {
 	private Float price;
 	private int qtdPlots;
 	private Float plotPrice;
-	private String link;
+	private String brand_name;
+	private String salesman_name;
 	
 	
 	public Integer getId() {
@@ -40,14 +41,18 @@ public class Wristwatch {
 	public void setPlotPrice(Float plotPrice) {
 		this.plotPrice = plotPrice;
 	}
-	public String getLink() {
-		return link;
+	public String getBrand_name() {
+		return brand_name;
 	}
-	public void setLink(String link) {
-		this.link = link;
+	public void setBrand_name(String brand_name) {
+		this.brand_name = brand_name;
 	}
-	
-	
-	
-	
+	public String getSalesman_name() {
+		return salesman_name;
+	}
+	public void setSalesman_name(String salesman_name) {
+		this.salesman_name = salesman_name;
+	}
+
+
 }

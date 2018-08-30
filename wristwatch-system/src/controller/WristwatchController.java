@@ -14,7 +14,13 @@ import javax.servlet.http.HttpSession;
 
 import dao.DAOFactory;
 import dao.WristwatchDao;
+import model.Brand;
+import model.Salesman;
+
 import model.Wristwatch;
+
+import dao.BrandDao;
+import dao.SalesmanDao;
 
 /**
  * Servlet implementation class WristwachController
@@ -22,6 +28,8 @@ import model.Wristwatch;
 @WebServlet(name = "WristwachController", urlPatterns = {"/wristwatch",
 	    "/wristwatch/create",
 	    "/wristwatch/update",
+	    "/wristwatch/set-create",
+	    "/wristwatch/set-update",
 	    "/wristwatch/delete",
 	    "/wristwatch/read",
 	    "/wristwatch/listAll"
@@ -47,19 +55,15 @@ public class WristwatchController extends HttpServlet {
         WristwatchDao dao;
 
 		switch(request.getServletPath()) {
-		case "/wristwatch":			
-			break;
-			
-		case "/wristwatch/create":
-			wristwatch.setName(request.getParameter("name"));
-			
+	
+		case "/wristwatch/delete":
             try (DAOFactory daoFactory = new DAOFactory()) {
 
                 dao = daoFactory.getWristwatchDao();
+                wristwatch.setId(Integer.parseInt(request.getParameter("id")));
+                dao.delete(wristwatch);
 
-                dao.create(wristwatch);
-
-                session.setAttribute("error", "Relógio cadastrada com sucesso!");
+                session.setAttribute("error", "Relógio removido com sucesso!");
             } catch (ClassNotFoundException | IOException | SQLException ex) {
                 session.setAttribute("error", ex.getMessage());
             }
@@ -68,15 +72,68 @@ public class WristwatchController extends HttpServlet {
 			dispatcher.forward(request, response);
 			break;
 			
-		case "/wristwatch/update":
-			break;
-			
-		case "/wristwatch/delete":
-			break;
-			
+		case "/wristwatch/set-create":
+			   BrandDao dao1;
+			   SalesmanDao dao2;
+	           try (DAOFactory daoFactory = new DAOFactory()) {
+
+	        	    dao1 = daoFactory.getBrandDao();                
+	                List<Brand> daoList1 = dao1.all();     
+	                request.setAttribute("brandList", daoList1);
+
+					dao2 = daoFactory.getSalesmanDao();          
+	                List<Salesman> daoList2 = dao2.all();  
+	                request.setAttribute("salesmanList", daoList2);
+	                
+	            } catch (ClassNotFoundException | IOException | SQLException ex) {
+	                request.setAttribute("error", ex.getMessage());
+	            }
+		           
+				dispatcher = request.getRequestDispatcher("/view/wristwatch-create.jsp");
+				dispatcher.forward(request, response);
+				break;
+				
 		case "/wristwatch/read":
+			
+            try (DAOFactory daoFactory = new DAOFactory()) {
+
+                dao = daoFactory.getWristwatchDao();
+                wristwatch.setId(Integer.parseInt(request.getParameter("id")));
+                wristwatch = dao.read(wristwatch);
+
+                session.setAttribute("wristwatch", wristwatch);
+            } catch (ClassNotFoundException | IOException | SQLException ex) {
+                session.setAttribute("error", ex.getMessage());
+            }
+            
+            dispatcher = request.getRequestDispatcher("/view/wristwatch-list.jsp");
+			dispatcher.forward(request, response);
 			break;
 			
+			
+		case "/wristwatch/set-update":
+	           try (DAOFactory daoFactory = new DAOFactory()) {
+
+	                dao = daoFactory.getWristwatchDao();
+	                wristwatch.setId(Integer.parseInt(request.getParameter("id")));
+	                wristwatch = dao.read(wristwatch);
+	                request.setAttribute("wristwatch", wristwatch);
+	                
+	        	    dao1 = daoFactory.getBrandDao();                
+	                List<Brand> daoList1 = dao1.all();     
+	                request.setAttribute("brandList", daoList1);
+
+					dao2 = daoFactory.getSalesmanDao();          
+	                List<Salesman> daoList2 = dao2.all();  
+	                request.setAttribute("salesmanList", daoList2);
+	            } catch (ClassNotFoundException | IOException | SQLException ex) {
+	                request.setAttribute("error", ex.getMessage());
+	            }
+		           
+				dispatcher = request.getRequestDispatcher("/view/wristwatch-update.jsp");
+				dispatcher.forward(request, response);
+				break;
+				
 		case "/wristwatch/listAll":
 
 			try (DAOFactory daoFactory = new DAOFactory()) {
@@ -105,11 +162,15 @@ public class WristwatchController extends HttpServlet {
         WristwatchDao dao;
 
 		switch(request.getServletPath()) {
-		case "/wristwatch":			
-			break;
 			
 		case "/wristwatch/create":
 			wristwatch.setName(request.getParameter("name"));
+			wristwatch.setPrice(Float.parseFloat(request.getParameter("price")));
+			wristwatch.setQtdPlots(Integer.parseInt(request.getParameter("qtdPlots")));
+			wristwatch.setPlotPrice(Float.parseFloat(request.getParameter("plotPrice")));
+			wristwatch.setBrand_name(request.getParameter("brand"));
+			wristwatch.setSalesman_name(request.getParameter("salesman"));
+			
 			
             try (DAOFactory daoFactory = new DAOFactory()) {
 
@@ -122,34 +183,33 @@ public class WristwatchController extends HttpServlet {
                 session.setAttribute("error", ex.getMessage());
             }
             
-            dispatcher = request.getRequestDispatcher("/view/wristwatch-list.jsp");
+            dispatcher = request.getRequestDispatcher("/view/wristwatch-create.jsp");
 			dispatcher.forward(request, response);
 			break;
 			
 		case "/wristwatch/update":
-			break;
+			wristwatch.setId(Integer.parseInt(request.getParameter("id")));
+			wristwatch.setName(request.getParameter("name"));
+			wristwatch.setPrice(Float.parseFloat(request.getParameter("price")));
+			wristwatch.setQtdPlots(Integer.parseInt(request.getParameter("qtdPlots")));
+			wristwatch.setPlotPrice(Float.parseFloat(request.getParameter("plotPrice")));
+			wristwatch.setBrand_name(request.getParameter("brand"));
+			wristwatch.setSalesman_name(request.getParameter("salesman"));
 			
-		case "/wristwatch/delete":
-			break;
-			
-		case "/wristwatch/read":
-			break;
-			
-		case "/wristwatch/listAll":
+            try (DAOFactory daoFactory = new DAOFactory()) {
 
-			try (DAOFactory daoFactory = new DAOFactory()) {
-				dao = daoFactory.getWristwatchDao();
-                
-                List<Wristwatch> daoList = dao.all();
-                
-                request.setAttribute("wristwatchList", daoList);
-            } catch (ClassNotFoundException | IOException | SQLException | SecurityException ex) {
-            	session.setAttribute("error", ex.getMessage());
+                dao = daoFactory.getWristwatchDao();
+
+                dao.update(wristwatch);
+
+                session.setAttribute("error", "Relógio atualizado com sucesso!");
+            } catch (ClassNotFoundException | IOException | SQLException ex) {
+                session.setAttribute("error", ex.getMessage());
             }
-
-			dispatcher = request.getRequestDispatcher("/view/wristwatch-list.jsp");
-			dispatcher.forward(request, response);
+            
+            response.sendRedirect(request.getContextPath() + "/wristwatch/listAll");
 			break;
+			
 		}
 	}
 

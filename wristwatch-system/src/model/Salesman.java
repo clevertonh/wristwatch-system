@@ -2,18 +2,11 @@ package model;
 
 public class Salesman {
 	
-	private Integer id;
 	private String name;
 	private Integer qtdProducts;
 	private Integer qtdBrands;
 	
 
-	public Integer getId() {
-		return id;
-	}
-	public void setId(Integer id) {
-		this.id = id;
-	}
 	public String getName() {
 		return name;
 	}
