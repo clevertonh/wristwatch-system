@@ -4,9 +4,9 @@ public class Wristwatch {
 	
 	private Integer id;
 	private String name;
-	private Float price;
+	private String price;
 	private int qtdPlots;
-	private Float plotPrice;
+	private String plotPrice;
 	private String brand_name;
 	private String salesman_name;
 	
@@ -23,10 +23,10 @@ public class Wristwatch {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Float getPrice() {
+	public String getPrice() {
 		return price;
 	}
-	public void setPrice(Float price) {
+	public void setPrice(String price) {
 		this.price = price;
 	}
 	public int getQtdPlots() {
@@ -35,10 +35,10 @@ public class Wristwatch {
 	public void setQtdPlots(int qtdPlots) {
 		this.qtdPlots = qtdPlots;
 	}
-	public Float getPlotPrice() {
+	public String getPlotPrice() {
 		return plotPrice;
 	}
-	public void setPlotPrice(Float plotPrice) {
+	public void setPlotPrice(String plotPrice) {
 		this.plotPrice = plotPrice;
 	}
 	public String getBrand_name() {

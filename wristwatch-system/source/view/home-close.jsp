@@ -1,11 +1,12 @@
  </section>
         </div>
-        <!-- 
+
         <footer class="main-footer">
-            <strong>Matheus © 2018
-                <a href="https://www.codificajr.com.br">Codifica</a>.</strong> All rights reserved.
-            <br>
-        </footer> -->
+        	<div>
+	            <strong>Matheus Augusto Marques© 2018
+	            <br>
+            </div>
+        </footer> 
     </div>
 
 

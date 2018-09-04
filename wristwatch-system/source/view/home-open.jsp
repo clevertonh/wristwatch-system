@@ -74,7 +74,7 @@
 		                            <span class="resize-lower">U</span>
 	                            </div>
 	                            <div class="dropdown-menu">
-							        <a class="dropdown-item" href="${pageContext.servletContext.contextPath}/view/user-create">Criar</a>
+							        <a class="dropdown-item" href="${pageContext.servletContext.contextPath}/view/user-create.jsp">Criar</a>
 							        <a class="dropdown-item" href="${pageContext.servletContext.contextPath}/view/home.jsp">Atualizar</a>
 							        <a class="dropdown-item" href="${pageContext.servletContext.contextPath}/user/listAll">Listar</a>
 							    </div>
@@ -131,6 +131,20 @@
                     </li>                 
                     
 
+ 					<li class="treeview">
+                       <a href="#">
+                            <div class="dropdown">
+                            	<div class="dropdown-toggle">
+		                            <span class="resize-upper">Json</span>
+		                            <span class="resize-lower">J]</span>
+	                            </div>
+	                            <div class="dropdown-menu">
+							        <a class="dropdown-item" href="${pageContext.servletContext.contextPath}/view/create-json.jsp">Armazenar por Json</a>
+							    </div>
+                            </div>
+                        </a>
+                    </li>     
+                    
 
                 </ul>
 

@@ -18,7 +18,7 @@
       <form action="${pageContext.servletContext.contextPath}/wristwatch/update" method="POST">
           <h2 class="form-signin-heading">Relógio <c:out value="${wristwatch.name}"/></h2>
           
-          <input type="text" name="name" value="<c:out value="${wristwatch.id}"/>" hidden=""/>
+          <input type="number" name="id" value="<c:out value="${wristwatch.id}"/>" hidden=""/>
           
            <div class="form-group">
 			    <label for="inputName">Nome*</label>

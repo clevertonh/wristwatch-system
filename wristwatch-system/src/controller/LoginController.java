@@ -38,12 +38,12 @@ public class LoginController extends HttpServlet {
                 session = request.getSession(false);
 
                 if (session != null && session.getAttribute("user") != null) {
-                    dispatcher = request.getRequestDispatcher("/view/home.jsp");
+                	response.sendRedirect(request.getContextPath() + "/view/home.jsp");
+                    //dispatcher = request.getRequestDispatcher("/view/home.jsp");
                 } else {
                     dispatcher = request.getRequestDispatcher("/index.jsp");
+                    dispatcher.forward(request, response);
                 }
-
-                dispatcher.forward(request, response);
 
                 break;
             case "/logout":

@@ -8,7 +8,6 @@
 
 <% List<Salesman> salesmanList = (List<Salesman>) request.getSession().getAttribute("salesmanList"); %>
 <% String error = (String) request.getSession().getAttribute("error"); %>
-<% error.toString(); %>
 
 <%@include  file="home-open.jsp" %>
 

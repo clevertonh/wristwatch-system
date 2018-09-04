@@ -22,7 +22,7 @@
 	   			<label for="inputQtdBrands">Quantidade de Marcas*</label>
 	   	   		<input type="number" name="qtdBrands" class="form-control" id="inputQtdBrands" value="<c:out value="${salesman.qtdBrands}"/>" placeholder="<c:out value="${salesman.qtdBrands}"/>">
 	 	  </div>
-	 	  
+	 	  <input type="text" name="name" value="<c:out value="${salesman.name}"/>" hidden=""/>
 		  <button type="submit" class="btn btn-primary">Atualizar</button>
 	
      </form>

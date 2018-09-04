@@ -117,6 +117,7 @@ public class WristwatchController extends HttpServlet {
 	                dao = daoFactory.getWristwatchDao();
 	                wristwatch.setId(Integer.parseInt(request.getParameter("id")));
 	                wristwatch = dao.read(wristwatch);
+	                wristwatch.setId(Integer.parseInt(request.getParameter("id")));
 	                request.setAttribute("wristwatch", wristwatch);
 	                
 	        	    dao1 = daoFactory.getBrandDao();                
@@ -165,9 +166,9 @@ public class WristwatchController extends HttpServlet {
 			
 		case "/wristwatch/create":
 			wristwatch.setName(request.getParameter("name"));
-			wristwatch.setPrice(Float.parseFloat(request.getParameter("price")));
+			wristwatch.setPrice(request.getParameter("price"));
 			wristwatch.setQtdPlots(Integer.parseInt(request.getParameter("qtdPlots")));
-			wristwatch.setPlotPrice(Float.parseFloat(request.getParameter("plotPrice")));
+			wristwatch.setPlotPrice(request.getParameter("plotPrice"));
 			wristwatch.setBrand_name(request.getParameter("brand"));
 			wristwatch.setSalesman_name(request.getParameter("salesman"));
 			
@@ -190,9 +191,9 @@ public class WristwatchController extends HttpServlet {
 		case "/wristwatch/update":
 			wristwatch.setId(Integer.parseInt(request.getParameter("id")));
 			wristwatch.setName(request.getParameter("name"));
-			wristwatch.setPrice(Float.parseFloat(request.getParameter("price")));
+			wristwatch.setPrice(request.getParameter("price"));
 			wristwatch.setQtdPlots(Integer.parseInt(request.getParameter("qtdPlots")));
-			wristwatch.setPlotPrice(Float.parseFloat(request.getParameter("plotPrice")));
+			wristwatch.setPlotPrice(request.getParameter("plotPrice"));
 			wristwatch.setBrand_name(request.getParameter("brand"));
 			wristwatch.setSalesman_name(request.getParameter("salesman"));
 			

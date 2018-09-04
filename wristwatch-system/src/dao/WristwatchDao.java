@@ -53,9 +53,9 @@ public class WristwatchDao extends DAO<Wristwatch>{
 		
         try (PreparedStatement statement = connection.prepareStatement(CREATE_QUERY);) {
             statement.setString(1, element.getName());
-            statement.setFloat(2, element.getPrice());
+            statement.setString(2, element.getPrice());
             statement.setInt(3, element.getQtdPlots());
-            statement.setFloat(4, element.getPlotPrice());
+            statement.setString(4, element.getPlotPrice());
             statement.setString(5, element.getBrand_name());
             statement.setString(6, element.getSalesman_name());
 
@@ -66,14 +66,6 @@ public class WristwatchDao extends DAO<Wristwatch>{
             }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
-
-            if (ex.getMessage().contains("uq_usuario_login")) {
-                throw new SQLException("Erro ao inserir usuário: login já existente.");
-            } else if (ex.getMessage().contains("not-null")) {
-                throw new SQLException("Erro ao inserir usuário: pelo menos um campo está em branco.");
-            } else {
-                throw new SQLException("Erro ao inserir usuário.");
-            }
         }
         
 	}
@@ -88,9 +80,9 @@ public class WristwatchDao extends DAO<Wristwatch>{
                 if (result.next()) {
                 	wristwatch.setId(element.getId());
                 	wristwatch.setName(result.getString("name"));
-                	wristwatch.setPrice(result.getFloat("price"));
+                	wristwatch.setPrice(result.getString("price"));
                 	wristwatch.setQtdPlots(result.getInt("qtd_plots"));
-                	wristwatch.setPlotPrice(result.getFloat("plots_price"));
+                	wristwatch.setPlotPrice(result.getString("plots_price"));
                 	wristwatch.setBrand_name(result.getString("brand_name"));
                 	wristwatch.setSalesman_name(result.getString("salesman_name"));
                 } else {
@@ -115,9 +107,9 @@ public class WristwatchDao extends DAO<Wristwatch>{
 
         try (PreparedStatement statement = connection.prepareStatement(UPDATE_QUERY)) {
             statement.setString(1, element.getName());
-            statement.setFloat(2, element.getPrice());
+            statement.setString(2, element.getPrice());
             statement.setInt(3, element.getQtdPlots());
-            statement.setFloat(4, element.getPlotPrice());
+            statement.setString(4, element.getPlotPrice());
             statement.setString(5, element.getBrand_name());
             statement.setString(6, element.getSalesman_name());
             statement.setInt(7, element.getId());
@@ -174,9 +166,9 @@ public class WristwatchDao extends DAO<Wristwatch>{
             	
             	wristwatch.setId(result.getInt("id"));
             	wristwatch.setName(result.getString("name"));
-            	wristwatch.setPrice(result.getFloat("price"));
+            	wristwatch.setPrice(result.getString("price"));
             	wristwatch.setQtdPlots(result.getInt("qtd_plots"));
-            	wristwatch.setPlotPrice(result.getFloat("plots_price"));
+            	wristwatch.setPlotPrice(result.getString("plots_price"));
             	wristwatch.setBrand_name(result.getString("brand_name"));
             	wristwatch.setSalesman_name(result.getString("salesman_name"));
                 wristwatchList.add(wristwatch);
