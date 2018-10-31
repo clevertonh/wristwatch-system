@@ -16,19 +16,19 @@ public class SalesmanDao extends DAO<Salesman>{
 	
     private static final String CREATE_QUERY
     = "INSERT INTO wristwatch.salesman"
-    + "(name,  qtd_products, qtd_brands)"
-    + "VALUES (?,?,?) RETURNING name";
+    + "(name)"
+    + "VALUES (?) RETURNING name";
     
     
     private static final String READ_QUERY
-    = "SELECT name, qtd_products, qtd_brands "
+    = "SELECT name "
     + "FROM wristwatch.salesman "
     + "WHERE name = ?";
 
     
     private static final String UPDATE_QUERY
     = "UPDATE wristwatch.salesman "
-    + "SET qtd_products = ?, qtd_brands = ? "
+    + "SET name = ? "
     + "WHERE name = ?;";
     
 
@@ -38,7 +38,7 @@ public class SalesmanDao extends DAO<Salesman>{
     
     
     private static final String ALL_QUERY
-    = "SELECT name, qtd_products, qtd_brands "
+    = "SELECT name "
     + "FROM wristwatch.salesman "
     + "ORDER BY name;";
     
@@ -53,9 +53,6 @@ public class SalesmanDao extends DAO<Salesman>{
 		
         try (PreparedStatement statement = connection.prepareStatement(CREATE_QUERY);) {
             statement.setString(1, element.getName());
-            statement.setInt(2, element.getQtdProducts());
-            statement.setInt(3, element.getQtdBrands());
-
 
             try (ResultSet result = statement.executeQuery();) {
                 if (result.next()) {
@@ -66,7 +63,7 @@ public class SalesmanDao extends DAO<Salesman>{
             System.err.println(ex.getMessage());
 
             if (ex.getMessage().contains("not-null")) {
-                throw new SQLException("Erro ao inserir vendedor: pelo menos um campo está em branco.");
+                throw new SQLException("Erro ao inserir vendedor: pelo menos um campo estï¿½ em branco.");
             } else {
                 throw new SQLException("Erro ao inserir vendedor.");
             }
@@ -83,16 +80,14 @@ public class SalesmanDao extends DAO<Salesman>{
             try (ResultSet result = statement.executeQuery()) {
                 if (result.next()) {
                 	salesman.setName(result.getString("name"));
-                	salesman.setQtdProducts(result.getInt("qtd_products"));
-                	salesman.setQtdBrands(result.getInt("qtd_brands"));
                 } else {
-                    throw new SQLException("Erro ao visualizar: vendedor não encontrado.");
+                    throw new SQLException("Erro ao visualizar: vendedor nï¿½o encontrado.");
                 }
             }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
 
-            if (ex.getMessage().equals("Erro ao visualizar: vendedor não encontrado.")) {
+            if (ex.getMessage().equals("Erro ao visualizar: vendedor nï¿½o encontrado.")) {
                 throw ex;
             } else {
                 throw new SQLException("Erro ao visualizar vendedor.");
@@ -105,21 +100,19 @@ public class SalesmanDao extends DAO<Salesman>{
 	@Override
 	public void update(Salesman element) throws SQLException {
 		 try (PreparedStatement statement = connection.prepareStatement(UPDATE_QUERY)) {
-	            statement.setInt(1, element.getQtdProducts());
-	            statement.setInt(2, element.getQtdBrands());
-	            statement.setString(3, element.getName());
+	            statement.setString(1, element.getName());
 	            
 	            if (statement.executeUpdate() < 1) {
-	                throw new SQLException("Erro ao editar: vendedor não encontrado.");
+	                throw new SQLException("Erro ao editar: vendedor nï¿½o encontrado.");
 	            }
 	            
 	        } catch (SQLException ex) {
 	            System.err.println(ex.getMessage());
 
-	            if (ex.getMessage().equals("Erro ao editar: vendedor não encontrado.")) {
+	            if (ex.getMessage().equals("Erro ao editar: vendedor nï¿½o encontrado.")) {
 	                throw ex;
 	            } else if (ex.getMessage().contains("not-null")) {
-	                throw new SQLException("Erro ao editar vendedor: pelo menos um campo está em branco.");
+	                throw new SQLException("Erro ao editar vendedor: pelo menos um campo estï¿½ em branco.");
 	            } else {
 	                throw new SQLException("Erro ao editar vendedor.");
 	            }
@@ -133,12 +126,12 @@ public class SalesmanDao extends DAO<Salesman>{
 	            statement.setString(1, element.getName());
 
 	            if (statement.executeUpdate() < 1) {
-	                throw new SQLException("Erro ao excluir: vendedor não encontrado.");
+	                throw new SQLException("Erro ao excluir: vendedor nï¿½o encontrado.");
 	            }
 	        } catch (SQLException ex) {
 	            System.err.println(ex.getMessage());
 
-	            if (ex.getMessage().equals("Erro ao excluir: vendedor não encontrado.")) {
+	            if (ex.getMessage().equals("Erro ao excluir: vendedor nï¿½o encontrado.")) {
 	                throw ex;
 	            } else {
 	                throw new SQLException("Erro ao excluir vendedor.");
@@ -158,8 +151,6 @@ public class SalesmanDao extends DAO<Salesman>{
             	Salesman salesman = new Salesman();
             	
             	salesman.setName(result.getString("name"));
-            	salesman.setQtdProducts(result.getInt("qtd_products"));
-            	salesman.setQtdBrands(result.getInt("qtd_brands"));
 
 
                 salesmanList.add(salesman);

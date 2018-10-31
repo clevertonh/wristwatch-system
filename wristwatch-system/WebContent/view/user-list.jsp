@@ -10,6 +10,12 @@
 
 <%@include  file="home-open.jsp" %>
 
+<% String error = (String) request.getSession().getAttribute("error"); %>
+
+<c:choose>
+
+<c:when test="${error == null && userList.size() > 0}">
+
 <table class="table">
   <thead>
     <tr>
@@ -35,6 +41,29 @@
   </tbody>
   
 </table>
+</c:when>
 
+<c:when test="${userList.size() == 0 }">
+
+	<div class="alert alert-info alert-dismissible fade show" role="alert">
+	  <strong>Informação!</strong> Nenhum usuário cadastrado na base de dados.
+	  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+	    <span aria-hidden="true">&times;</span>
+	  </button>
+	</div>
+
+</c:when>
+
+<c:otherwise>
+	<div class="alert alert-warning alert-dismissible fade show" role="alert">
+	  <strong>Aviso!</strong> <%= error %>
+	  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+	    <span aria-hidden="true">&times;</span>
+	  </button>
+	</div>
+	<% request.getSession().setAttribute("error", null); %>
+</c:otherwise>
+
+</c:choose>
 
 <%@include  file="home-close.jsp" %>

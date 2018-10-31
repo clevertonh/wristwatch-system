@@ -7,24 +7,26 @@
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 
 <%@include  file="home-open.jsp" %>
+<% String error = (String) request.getSession().getAttribute("error"); %>
 
+	<c:if test="${error != null}">
+		<div class="alert alert-warning alert-dismissible fade show" role="alert">
+		  <strong>Aviso!</strong> <%= error %>
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		    <span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<% request.getSession().setAttribute("error", null); %>
+	</c:if>
+	
+	
       <form action="${pageContext.servletContext.contextPath}/salesman/create" method="POST">
           <h2 class="form-signin-heading">Informe os dados cadastrais do revendedor</h2>
            <div class="form-group">
 			    <label for="inputName">Nome*</label>
 			    <input type="text" name="name" class="form-control" id="inputName" placeholder="Nome" required>
 	 		</div>
-
-           <div class="form-group">
-	   			<label for="inputQtdProduct">Quantidade de Produtos*</label>
-	   	   <input type="number" name="qtdProducts" class="form-control" id="inputQtdProduct" placeholder="Produtos" required>
-	 	  </div>
-	 	   
-           <div class="form-group">
-	   			<label for="inputQtdBrands">Quantidade de Marcas*</label>
-	   	   <input type="number" name="qtdBrands" class="form-control" id="inputQtdBrands" placeholder="Marcas" required>
-	 	  </div>
-	 	  
+  
 		  <button type="submit" class="btn btn-primary">Cadastrar</button>
 	
      </form>

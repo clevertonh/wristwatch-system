@@ -127,6 +127,7 @@ public class BrandController extends HttpServlet {
 		case "/brand/create":
 			brand.setName(request.getParameter("name"));
 			brand.setCountry(request.getParameter("country"));
+			brand.setCreation(request.getParameter("creation"));
 			
             try (DAOFactory daoFactory = new DAOFactory()) {
 
@@ -146,6 +147,7 @@ public class BrandController extends HttpServlet {
 		case "/brand/update":
 			brand.setName(request.getParameter("name"));
 			brand.setCountry(request.getParameter("country"));
+			brand.setCreation(request.getParameter("creation"));
 			
             try (DAOFactory daoFactory = new DAOFactory()) {
 

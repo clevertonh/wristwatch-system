@@ -15,19 +15,19 @@ public class BrandDao extends DAO<Brand>{
 	
     private static final String CREATE_QUERY
     = "INSERT INTO wristwatch.brand"
-    + "(name, country)"
-    + "VALUES (?,?) RETURNING name";
+    + "(name, country, creation)"
+    + "VALUES (?,?, ?) RETURNING name";
     
     
     private static final String READ_QUERY
-    = "SELECT name, country "
+    = "SELECT name, country, creation "
     + "FROM wristwatch.brand "
     + "WHERE name = ?";
 
     
     private static final String UPDATE_QUERY
     = "UPDATE wristwatch.brand "
-    + "SET country = ? "
+    + "SET country = ?, creation = ? "
     + "WHERE name = ?;";
     
 
@@ -37,7 +37,7 @@ public class BrandDao extends DAO<Brand>{
     
     
     private static final String ALL_QUERY
-    = "SELECT name, country "
+    = "SELECT name, country, creation "
     + "FROM wristwatch.brand "
     + "ORDER BY name;";
     
@@ -52,7 +52,8 @@ public class BrandDao extends DAO<Brand>{
 		try (PreparedStatement statement = connection.prepareStatement(CREATE_QUERY);) {
             statement.setString(1, element.getName());
             statement.setString(2, element.getCountry());
-
+            statement.setString(3, element.getCreation());
+            
             try (ResultSet result = statement.executeQuery();) {
                 if (result.next()) {
                     element.setName(result.getString("name"));
@@ -62,9 +63,9 @@ public class BrandDao extends DAO<Brand>{
             System.err.println(ex.getMessage());
 
             if (ex.getMessage().contains("uq_usuario_login")) {
-                throw new SQLException("Erro ao inserir marca: login j· existente.");
+                throw new SQLException("Erro ao inserir marca: login j√° existente.");
             } else if (ex.getMessage().contains("not-null")) {
-                throw new SQLException("Erro ao inserir marca: pelo menos um campo est· em branco.");
+                throw new SQLException("Erro ao inserir marca: pelo menos um campo est√° em branco.");
             } else {
                 throw new SQLException("Erro ao inserir marca.");
             }
@@ -82,17 +83,18 @@ public class BrandDao extends DAO<Brand>{
                 if (result.next()) {
                 	brand.setName(result.getString("name"));
                 	brand.setCountry(result.getString("country"));
+                	brand.setCreation(result.getString("creation"));
                 } else {
-                    throw new SQLException("Erro ao visualizar: relÛgio n„o encontrado.");
+                    throw new SQLException("Erro ao visualizar: rel√≥gio n√£o encontrado.");
                 }
             }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
 
-            if (ex.getMessage().equals("Erro ao visualizar: relÛgio n„o encontrado.")) {
+            if (ex.getMessage().equals("Erro ao visualizar: rel√≥gio n√£o encontrado.")) {
                 throw ex;
             } else {
-                throw new SQLException("Erro ao visualizar relÛgio.");
+                throw new SQLException("Erro ao visualizar rel√≥gio.");
             }
         }
 
@@ -104,20 +106,21 @@ public class BrandDao extends DAO<Brand>{
         try (PreparedStatement statement = connection.prepareStatement(UPDATE_QUERY)) {
             statement.setString(1, element.getCountry());
             statement.setString(2, element.getName());
+            statement.setString(3, element.getCreation());
             
             if (statement.executeUpdate() < 1) {
-                throw new SQLException("Erro ao editar: marca n„o encontrado.");
+                throw new SQLException("Erro ao editar: marca n√£o encontrado.");
             }
             
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
 
-            if (ex.getMessage().equals("Erro ao editar: marca n„o encontrado.")) {
+            if (ex.getMessage().equals("Erro ao editar: marca n√£o encontrado.")) {
                 throw ex;
             } else if (ex.getMessage().contains("uq_usuario_login")) {
-                throw new SQLException("Erro ao editar marca: login j· existente.");
+                throw new SQLException("Erro ao editar marca: login j√° existente.");
             } else if (ex.getMessage().contains("not-null")) {
-                throw new SQLException("Erro ao editar marca: pelo menos um campo est· em branco.");
+                throw new SQLException("Erro ao editar marca: pelo menos um campo est√° em branco.");
             } else {
                 throw new SQLException("Erro ao editar marca.");
             }
@@ -131,12 +134,12 @@ public class BrandDao extends DAO<Brand>{
 	            statement.setString(1, element.getName());
 
 	            if (statement.executeUpdate() < 1) {
-	                throw new SQLException("Erro ao excluir: marca n„o encontrado.");
+	                throw new SQLException("Erro ao excluir: marca n√£o encontrado.");
 	            }
 	        } catch (SQLException ex) {
 	            System.err.println(ex.getMessage());
 
-	            if (ex.getMessage().equals("Erro ao excluir: marca n„o encontrado.")) {
+	            if (ex.getMessage().equals("Erro ao excluir: marca n√£o encontrado.")) {
 	                throw ex;
 	            } else {
 	                throw new SQLException("Erro ao excluir marca.");
@@ -156,7 +159,7 @@ public class BrandDao extends DAO<Brand>{
             	
             	brand.setName(result.getString("name"));
             	brand.setCountry(result.getString("Country"));
-
+            	brand.setCreation(result.getString("creation"));
                 brandList.add(brand);
             }
         } catch (SQLException ex) {

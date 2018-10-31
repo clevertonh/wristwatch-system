@@ -44,10 +44,12 @@ public class SalesmanController extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestDispatcher dispatcher;
-		HttpSession session = request.getSession();
+		HttpSession session = request.getSession(true);
 		Salesman salesman = new Salesman();
         SalesmanDao dao;
-
+        
+        
+        
 		switch(request.getServletPath()) {
 
 		case "/salesman/delete":
@@ -128,9 +130,7 @@ public class SalesmanController extends HttpServlet {
 			
 		case "/salesman/create":
 			salesman.setName(request.getParameter("name"));
-			salesman.setQtdBrands(Integer.parseInt(request.getParameter("qtdBrands")));
-			salesman.setQtdProducts(Integer.parseInt(request.getParameter("qtdProducts")));
-			
+		
             try (DAOFactory daoFactory = new DAOFactory()) {
 
                 dao = daoFactory.getSalesmanDao();
@@ -148,8 +148,6 @@ public class SalesmanController extends HttpServlet {
 			
 		case "/salesman/update":
 			salesman.setName(request.getParameter("name"));
-			salesman.setQtdBrands(Integer.parseInt(request.getParameter("qtdBrands")));
-			salesman.setQtdProducts(Integer.parseInt(request.getParameter("qtdProducts")));
 			
             try (DAOFactory daoFactory = new DAOFactory()) {
 

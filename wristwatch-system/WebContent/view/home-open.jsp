@@ -12,6 +12,9 @@
     <link href="../assets/css/interface-aside-menu.css" rel="stylesheet">
     <link href="../assets/css/interface-content.css" rel="stylesheet">
     <link href="../assets/css/interface.css" rel="stylesheet">
+    <script type="text/javascript" src="../assets/Chart.js-2.7.3/dist/Chart.bundle.min.js"></script>
+    <script type="text/javascript" src="../assets/Chart.js-2.7.3/dist/Chart.min.js"></script>
+
 </head>
 
 <body>
@@ -70,7 +73,7 @@
                             
                             <div class="dropdown">
                             	<div class="dropdown-toggle">
-		                            <span class="resize-upper">Usuário</span>
+		                            <span class="resize-upper">Usuários</span>
 		                            <span class="resize-lower">U</span>
 	                            </div>
 	                            <div class="dropdown-menu">
@@ -103,7 +106,7 @@
                             
                             <div class="dropdown">
                             	<div class="dropdown-toggle">
-		                            <span class="resize-upper">Marca</span>
+		                            <span class="resize-upper">Marcas</span>
 		                            <span class="resize-lower">M</span>
 	                            </div>
 	                            <div class="dropdown-menu">
@@ -119,7 +122,7 @@
                             
                             <div class="dropdown">
                             	<div class="dropdown-toggle">
-		                            <span class="resize-upper">Vendedor</span>
+		                            <span class="resize-upper">Vendedores</span>
 		                            <span class="resize-lower">V</span>
 	                            </div>
 	                            <div class="dropdown-menu">
@@ -131,20 +134,76 @@
                     </li>                 
                     
 
+                    <li class="treeview">
+                        <a href="#">
+                            
+                            <div class="dropdown">
+                            	<div class="dropdown-toggle">
+		                            <span class="resize-upper">Coleção</span>
+		                            <span class="resize-lower">C</span>
+	                            </div>
+	                            <div class="dropdown-menu">
+							        <a class="dropdown-item" href="${pageContext.servletContext.contextPath}/view/collection-create.jsp">Criar</a>
+							        <a class="dropdown-item" href="${pageContext.servletContext.contextPath}/collection/listAll">Listar</a>
+							    </div>
+                            </div>
+                        </a>
+                    </li>   
+
+                    <li class="treeview">
+                        <a href="#">
+                            
+                            <div class="dropdown">
+                            	<div class="dropdown-toggle">
+		                            <span class="resize-upper">Empresas de Compra</span>
+		                            <span class="resize-lower">E-C</span>
+	                            </div>
+	                            <div class="dropdown-menu">
+							        <a class="dropdown-item" href="${pageContext.servletContext.contextPath}/view/sale-create.jsp">Criar</a>
+							        <a class="dropdown-item" href="${pageContext.servletContext.contextPath}/sale/listAll">Listar</a>
+							    </div>
+                            </div>
+                        </a>
+                    </li>  
+                    
+                    <li class="treeview">
+                        <a href="#">
+                            
+                            <div class="dropdown">
+                            	<div class="dropdown-toggle">
+		                            <span class="resize-upper">Distribuição</span>
+		                            <span class="resize-lower">E-D</span>
+	                            </div>
+	                            <div class="dropdown-menu">
+							        <a class="dropdown-item" href="${pageContext.servletContext.contextPath}/view/purchase-create.jsp">Criar</a>
+							        <a class="dropdown-item" href="${pageContext.servletContext.contextPath}/purchase/listAll">Listar</a>
+							    </div>
+                            </div>
+                        </a>
+                    </li>                     
+
  					<li class="treeview">
-                       <a href="#">
+                       <a href="${pageContext.servletContext.contextPath}/view/json-inserts.jsp">
                             <div class="dropdown">
                             	<div class="dropdown-toggle">
 		                            <span class="resize-upper">Json</span>
-		                            <span class="resize-lower">J]</span>
+		                            <span class="resize-lower">J</span>
 	                            </div>
-	                            <div class="dropdown-menu">
-							        <a class="dropdown-item" href="${pageContext.servletContext.contextPath}/view/create-json.jsp">Armazenar por Json</a>
-							    </div>
                             </div>
                         </a>
                     </li>     
                     
+                    
+                   <li class="treeview">
+                       <a href="${pageContext.servletContext.contextPath}/view/data-analysis.jsp">
+                            <div class="dropdown">
+                            	<div class="dropdown-toggle">
+		                            <span class="resize-upper">Análise de Dados</span>
+		                            <span class="resize-lower">A.D</span>
+	                            </div>
+                            </div>
+                        </a>
+                    </li> 
 
                 </ul>
 

@@ -21,7 +21,7 @@ public class DAOFactory implements AutoCloseable {
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
 
-            throw new SQLException("Erro ao abrir transaÁ„o.");
+            throw new SQLException("Erro ao abrir transa√ß√£o.");
         }
     }
 
@@ -31,7 +31,7 @@ public class DAOFactory implements AutoCloseable {
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
 
-            throw new SQLException("Erro ao finalizar transaÁ„o.");
+            throw new SQLException("Erro ao finalizar transa√ß√£o.");
         }
     }
 
@@ -41,7 +41,7 @@ public class DAOFactory implements AutoCloseable {
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
 
-            throw new SQLException("Erro ao executar transaÁ„o.");
+            throw new SQLException("Erro ao executar transa√ß√£o.");
         }
     }
 
@@ -51,7 +51,7 @@ public class DAOFactory implements AutoCloseable {
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
 
-            throw new SQLException("Erro ao finalizar transaÁ„o.");
+            throw new SQLException("Erro ao finalizar transa√ß√£o.");
         }
     }
 
@@ -61,7 +61,7 @@ public class DAOFactory implements AutoCloseable {
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
 
-            throw new SQLException("Erro ao fechar conex„o ao banco de dados.");
+            throw new SQLException("Erro ao fechar conex√£o ao banco de dados.");
         }
     }
 
@@ -79,6 +79,18 @@ public class DAOFactory implements AutoCloseable {
     
     public WristwatchDao getWristwatchDao() {
         return new WristwatchDao(connection);
+    }
+    
+    public CollectionDao getCollectionDao() {
+        return new CollectionDao(connection);
+    }
+    
+    public SaleDao getSaleDao() {
+        return new SaleDao(connection);
+    }
+    
+    public PurchaseDao getPurchaseDao() {
+        return new PurchaseDao(connection);
     }
     
     @Override

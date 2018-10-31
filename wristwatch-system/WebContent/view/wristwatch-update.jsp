@@ -6,14 +6,26 @@
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 <%@ page import="java.util.List" %>
 <%@ page import="model.Brand" %>
-<%@ page import="model.Salesman" %>
+<%@ page import="model.Collection" %>
 <%@ page import="model.Wristwatch" %>
 
 <% List<Brand> brandList = (List<Brand>) request.getSession().getAttribute("brandList"); %>
-<% List<Salesman> salesmanList = (List<Salesman>) request.getSession().getAttribute("salesmanList"); %>
+<% List<Collection> collectionList = (List<Collection>) request.getSession().getAttribute("collectionList"); %>
 <% Wristwatch wristwatch = (Wristwatch) request.getSession().getAttribute("Wristwatch"); %>
 
 <%@include  file="home-open.jsp" %>
+
+<% String error = (String) request.getSession().getAttribute("error"); %>
+
+		<c:if test="${error != null}">
+			<div class="alert alert-warning alert-dismissible fade show" role="alert">
+			  <strong>Aviso!</strong> <%= error %>
+			  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			    <span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<% request.getSession().setAttribute("error", null); %>
+		</c:if>
 
       <form action="${pageContext.servletContext.contextPath}/wristwatch/update" method="POST">
           <h2 class="form-signin-heading">Relógio <c:out value="${wristwatch.name}"/></h2>
@@ -27,7 +39,7 @@
 
            <div class="form-group">
 	   			<label for="inputPrice">Preço*</label>
-	   	   <input type="number" name="price" class="form-control" id="inputPrice" placeholder="<c:out value="${wristwatch.price}"/>" required>
+	   	   <input type="number" name="price" class="form-control" id="inputPrice" placeholder="<c:out value="${wristwatch.price}"/>" min="1.00" max="1000000.00" step="0.01" required>
 	 	  </div>
 	 	   
            <div class="form-group">
@@ -37,7 +49,7 @@
 
            <div class="form-group">
 	   			<label for="inputPlotPrice">Preço das Parcelas*</label>
-	   	   <input type="number" name="plotPrice" class="form-control" id="inputPlotPrice" placeholder="<c:out value="${wristwatch.plotPrice}"/>" required>
+	   	   <input type="number" name="plotPrice" class="form-control" id="inputPlotPrice" placeholder="<c:out value="${wristwatch.plotPrice}"/>" min="1.00" max="1000000.00" step="0.01" required>
 	 	  </div>
 
            <div class="form-group">
@@ -56,13 +68,13 @@
 	 	  </div>
 	 	  
            <div class="form-group">
-	   			<label for="inputSalesman">Revendedor*</label>
-	   		    <select name="salesman" class="form-control" id="inputSalesman">
+	   			<label for="inputCollection">Coleções*</label>
+	   		    <select name="collection" class="form-control" id="inputCollection">
 
-				    <c:forEach items="${salesmanList}" var="salesman">
-					  	<option value="<c:out value="${salesman.name}"/>">
+				    <c:forEach items="${collectionList}" var="collection">
+					  	<option value="<c:out value="${collection.name}"/>">
 					     
-					      <c:out value="${salesman.name}"/>
+					      <c:out value="${collection.name}"/>
 					      
 					    </option>
 					</c:forEach>

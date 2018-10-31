@@ -20,6 +20,20 @@
         <div class="system-name">
             <a href="home.jsp">Wristwatch System</a>
         </div>
+        
+        
+        <% String error = (String) request.getSession().getAttribute("error"); %>
+
+		<c:if test="${error != null}">
+			<div class="alert alert-warning alert-dismissible fade show" role="alert">
+			  <strong>Aviso!</strong> <%= error %>
+			  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			    <span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<% request.getSession().setAttribute("error", null); %>
+		</c:if>
+        
         <form action="${pageContext.servletContext.contextPath}/user/create" method="POST">
             <h2 class="form-signin-heading">Informe seus dados cadastrais</h2>
              <div class="form-group">

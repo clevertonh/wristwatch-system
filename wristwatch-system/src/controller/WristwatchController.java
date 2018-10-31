@@ -15,11 +15,13 @@ import javax.servlet.http.HttpSession;
 import dao.DAOFactory;
 import dao.WristwatchDao;
 import model.Brand;
+import model.Collection;
 import model.Salesman;
 
 import model.Wristwatch;
 
 import dao.BrandDao;
+import dao.CollectionDao;
 import dao.SalesmanDao;
 
 /**
@@ -63,7 +65,7 @@ public class WristwatchController extends HttpServlet {
                 wristwatch.setId(Integer.parseInt(request.getParameter("id")));
                 dao.delete(wristwatch);
 
-                session.setAttribute("error", "Relógio removido com sucesso!");
+                session.setAttribute("error", "RelÃ³gio removido com sucesso!");
             } catch (ClassNotFoundException | IOException | SQLException ex) {
                 session.setAttribute("error", ex.getMessage());
             }
@@ -74,16 +76,16 @@ public class WristwatchController extends HttpServlet {
 			
 		case "/wristwatch/set-create":
 			   BrandDao dao1;
-			   SalesmanDao dao2;
+			   CollectionDao dao2;
 	           try (DAOFactory daoFactory = new DAOFactory()) {
 
 	        	    dao1 = daoFactory.getBrandDao();                
 	                List<Brand> daoList1 = dao1.all();     
 	                request.setAttribute("brandList", daoList1);
 
-					dao2 = daoFactory.getSalesmanDao();          
-	                List<Salesman> daoList2 = dao2.all();  
-	                request.setAttribute("salesmanList", daoList2);
+					dao2 = daoFactory.getCollectionDao();          
+	                List<Collection> daoList2 = dao2.all();  
+	                request.setAttribute("collectionList", daoList2);
 	                
 	            } catch (ClassNotFoundException | IOException | SQLException ex) {
 	                request.setAttribute("error", ex.getMessage());
@@ -124,9 +126,10 @@ public class WristwatchController extends HttpServlet {
 	                List<Brand> daoList1 = dao1.all();     
 	                request.setAttribute("brandList", daoList1);
 
-					dao2 = daoFactory.getSalesmanDao();          
-	                List<Salesman> daoList2 = dao2.all();  
-	                request.setAttribute("salesmanList", daoList2);
+					dao2 = daoFactory.getCollectionDao();          
+	                List<Collection> daoList2 = dao2.all();  
+	                request.setAttribute("collectionList", daoList2);
+	                
 	            } catch (ClassNotFoundException | IOException | SQLException ex) {
 	                request.setAttribute("error", ex.getMessage());
 	            }
@@ -166,11 +169,11 @@ public class WristwatchController extends HttpServlet {
 			
 		case "/wristwatch/create":
 			wristwatch.setName(request.getParameter("name"));
-			wristwatch.setPrice(request.getParameter("price"));
+			wristwatch.setPrice(Double.parseDouble(request.getParameter("price")));
 			wristwatch.setQtdPlots(Integer.parseInt(request.getParameter("qtdPlots")));
-			wristwatch.setPlotPrice(request.getParameter("plotPrice"));
+			wristwatch.setPlotPrice(Double.parseDouble(request.getParameter("plotPrice")));
 			wristwatch.setBrand_name(request.getParameter("brand"));
-			wristwatch.setSalesman_name(request.getParameter("salesman"));
+			wristwatch.setCollection_name(request.getParameter("collection"));
 			
 			
             try (DAOFactory daoFactory = new DAOFactory()) {
@@ -179,7 +182,7 @@ public class WristwatchController extends HttpServlet {
 
                 dao.create(wristwatch);
 
-                session.setAttribute("error", "Relógio cadastrada com sucesso!");
+                session.setAttribute("error", "RelÃ³gio cadastrada com sucesso!");
             } catch (ClassNotFoundException | IOException | SQLException ex) {
                 session.setAttribute("error", ex.getMessage());
             }
@@ -191,11 +194,11 @@ public class WristwatchController extends HttpServlet {
 		case "/wristwatch/update":
 			wristwatch.setId(Integer.parseInt(request.getParameter("id")));
 			wristwatch.setName(request.getParameter("name"));
-			wristwatch.setPrice(request.getParameter("price"));
+			wristwatch.setPrice(Double.parseDouble(request.getParameter("price")));
 			wristwatch.setQtdPlots(Integer.parseInt(request.getParameter("qtdPlots")));
-			wristwatch.setPlotPrice(request.getParameter("plotPrice"));
+			wristwatch.setPlotPrice(Double.parseDouble(request.getParameter("plotPrice")));
 			wristwatch.setBrand_name(request.getParameter("brand"));
-			wristwatch.setSalesman_name(request.getParameter("salesman"));
+			wristwatch.setCollection_name(request.getParameter("collection"));
 			
             try (DAOFactory daoFactory = new DAOFactory()) {
 
@@ -203,7 +206,7 @@ public class WristwatchController extends HttpServlet {
 
                 dao.update(wristwatch);
 
-                session.setAttribute("error", "Relógio atualizado com sucesso!");
+                session.setAttribute("error", "RelÃ³gio atualizado com sucesso!");
             } catch (ClassNotFoundException | IOException | SQLException ex) {
                 session.setAttribute("error", ex.getMessage());
             }

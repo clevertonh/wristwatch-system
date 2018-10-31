@@ -4,8 +4,15 @@ public class Brand {
 	
 	private String name;
 	private String country;
+	private String creation;
 	
 	
+	public String getCreation() {
+		return creation;
+	}
+	public void setCreation(String creation) {
+		this.creation = creation;
+	}
 	public String getName() {
 		return name;
 	}

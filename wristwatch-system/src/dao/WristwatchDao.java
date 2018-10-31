@@ -16,19 +16,19 @@ public class WristwatchDao extends DAO<Wristwatch>{
 
     private static final String CREATE_QUERY
     = "INSERT INTO wristwatch.wristwatch"
-    + "(name, price, qtd_plots, plots_price, brand_name, salesman_name)"
+    + "(name, price, qtd_plots, plots_price, brand_name, collection_name)"
     + "VALUES (?,?,?,?,?,?) RETURNING id";
     
     
     private static final String READ_QUERY
-    = "SELECT id, name, price, qtd_plots, plots_price, brand_name, salesman_name "
+    = "SELECT id, name, price, qtd_plots, plots_price, brand_name, collection_name "
     + "FROM wristwatch.wristwatch "
     + "WHERE id = ?;";
 
     
     private static final String UPDATE_QUERY
     = "UPDATE wristwatch.wristwatch "
-    + "SET name = ?, price = ?, qtd_plots = ?, plots_price = ?, brand_name = ?, salesman_name = ?"
+    + "SET name = ?, price = ?, qtd_plots = ?, plots_price = ?, brand_name = ?, collection_name = ?"
     + "WHERE id = ?;";
     
 
@@ -38,7 +38,7 @@ public class WristwatchDao extends DAO<Wristwatch>{
     
     
     private static final String ALL_QUERY
-    = "SELECT id, name, price, qtd_plots, plots_price, brand_name, salesman_name "
+    = "SELECT id, name, price, qtd_plots, plots_price, brand_name, collection_name "
     + "FROM wristwatch.wristwatch "
     + "ORDER BY name;";
 	
@@ -53,11 +53,11 @@ public class WristwatchDao extends DAO<Wristwatch>{
 		
         try (PreparedStatement statement = connection.prepareStatement(CREATE_QUERY);) {
             statement.setString(1, element.getName());
-            statement.setString(2, element.getPrice());
+            statement.setDouble(2, element.getPrice());
             statement.setInt(3, element.getQtdPlots());
-            statement.setString(4, element.getPlotPrice());
+            statement.setDouble(4, element.getPlotPrice());
             statement.setString(5, element.getBrand_name());
-            statement.setString(6, element.getSalesman_name());
+            statement.setString(6, element.getCollection_name());
 
             try (ResultSet result = statement.executeQuery();) {
                 if (result.next()) {
@@ -80,22 +80,22 @@ public class WristwatchDao extends DAO<Wristwatch>{
                 if (result.next()) {
                 	wristwatch.setId(element.getId());
                 	wristwatch.setName(result.getString("name"));
-                	wristwatch.setPrice(result.getString("price"));
+                	wristwatch.setPrice(result.getDouble("price"));
                 	wristwatch.setQtdPlots(result.getInt("qtd_plots"));
-                	wristwatch.setPlotPrice(result.getString("plots_price"));
+                	wristwatch.setPlotPrice(result.getDouble("plots_price"));
                 	wristwatch.setBrand_name(result.getString("brand_name"));
-                	wristwatch.setSalesman_name(result.getString("salesman_name"));
+                	wristwatch.setCollection_name(result.getString("collection_name"));
                 } else {
-                    throw new SQLException("Erro ao visualizar: relÛgio n„o encontrado.");
+                    throw new SQLException("Erro ao visualizar: rel√≥gio n√£o encontrado.");
                 }
             }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
 
-            if (ex.getMessage().equals("Erro ao visualizar: relÛgio n„o encontrado.")) {
+            if (ex.getMessage().equals("Erro ao visualizar: rel√≥gio n√£o encontrado.")) {
                 throw ex;
             } else {
-                throw new SQLException("Erro ao visualizar relÛgio.");
+                throw new SQLException("Erro ao visualizar rel√≥gio.");
             }
         }
 
@@ -107,29 +107,29 @@ public class WristwatchDao extends DAO<Wristwatch>{
 
         try (PreparedStatement statement = connection.prepareStatement(UPDATE_QUERY)) {
             statement.setString(1, element.getName());
-            statement.setString(2, element.getPrice());
+            statement.setDouble(2, element.getPrice());
             statement.setInt(3, element.getQtdPlots());
-            statement.setString(4, element.getPlotPrice());
+            statement.setDouble(4, element.getPlotPrice());
             statement.setString(5, element.getBrand_name());
-            statement.setString(6, element.getSalesman_name());
+            statement.setString(6, element.getCollection_name());
             statement.setInt(7, element.getId());
             
             
             if (statement.executeUpdate() < 1) {
-                throw new SQLException("Erro ao editar: relÛgio n„o encontrado.");
+                throw new SQLException("Erro ao editar: rel√≥gio n√£o encontrado.");
             }
             
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
 
-            if (ex.getMessage().equals("Erro ao editar: relÛgio n„o encontrado.")) {
+            if (ex.getMessage().equals("Erro ao editar: rel√≥gio n√£o encontrado.")) {
                 throw ex;
             } else if (ex.getMessage().contains("uq_usuario_login")) {
-                throw new SQLException("Erro ao editar usu·rio: login j· existente.");
+                throw new SQLException("Erro ao editar usu√°rio: login j√° existente.");
             } else if (ex.getMessage().contains("not-null")) {
-                throw new SQLException("Erro ao editar relÛgio: pelo menos um campo est· em branco.");
+                throw new SQLException("Erro ao editar rel√≥gio: pelo menos um campo est√° em branco.");
             } else {
-                throw new SQLException("Erro ao editar relÛgio.");
+                throw new SQLException("Erro ao editar rel√≥gio.");
             }
         }
 		
@@ -141,18 +141,48 @@ public class WristwatchDao extends DAO<Wristwatch>{
 	            statement.setInt(1, element.getId());
 
 	            if (statement.executeUpdate() < 1) {
-	                throw new SQLException("Erro ao excluir: relÛgio n„o encontrado.");
+	                throw new SQLException("Erro ao excluir: rel√≥gio n√£o encontrado.");
 	            }
 	        } catch (SQLException ex) {
 	            System.err.println(ex.getMessage());
 
-	            if (ex.getMessage().equals("Erro ao excluir: relÛgio n„o encontrado.")) {
+	            if (ex.getMessage().equals("Erro ao excluir: rel√≥gio n√£o encontrado.")) {
 	                throw ex;
 	            } else {
-	                throw new SQLException("Erro ao excluir relÛgio.");
+	                throw new SQLException("Erro ao excluir rel√≥gio.");
 	            }
 	        }
 		
+	}
+	
+	public List<Wristwatch> select(String query) throws SQLException {
+		List<Wristwatch> wristwatchList = new ArrayList<>();
+		
+	    try (PreparedStatement statement = connection.prepareStatement(query)) {
+            ResultSet result = statement.executeQuery();
+	        while (result.next()) {
+	        	Wristwatch wristwatch = new Wristwatch();
+	        	
+	        	wristwatch.setId(result.getInt("id"));
+	        	wristwatch.setName(result.getString("name"));
+	        	wristwatch.setPrice(result.getDouble("price"));
+	        	wristwatch.setQtdPlots(result.getInt("qtd_plots"));
+	        	wristwatch.setPlotPrice(result.getDouble("plots_price"));
+	        	wristwatch.setBrand_name(result.getString("brand_name"));
+	        	wristwatch.setCollection_name(result.getString("collection_name"));
+	            wristwatchList.add(wristwatch);
+	        }
+	    } catch (SQLException ex) {
+	        System.err.println(ex.getMessage());
+	
+	        if (ex.getMessage().equals("Erro ao consultar banco de dados")) {
+	    throw ex;
+		} else {
+		    throw new SQLException("Erro ao consultar banco de dados");
+		    }
+		}
+	    
+	    return wristwatchList;
 	}
 
 	@Override
@@ -166,22 +196,38 @@ public class WristwatchDao extends DAO<Wristwatch>{
             	
             	wristwatch.setId(result.getInt("id"));
             	wristwatch.setName(result.getString("name"));
-            	wristwatch.setPrice(result.getString("price"));
+            	wristwatch.setPrice(result.getDouble("price"));
             	wristwatch.setQtdPlots(result.getInt("qtd_plots"));
-            	wristwatch.setPlotPrice(result.getString("plots_price"));
+            	wristwatch.setPlotPrice(result.getDouble("plots_price"));
             	wristwatch.setBrand_name(result.getString("brand_name"));
-            	wristwatch.setSalesman_name(result.getString("salesman_name"));
+            	wristwatch.setCollection_name(result.getString("collection_name"));
                 wristwatchList.add(wristwatch);
             }
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
 
-            throw new SQLException("Erro ao listar relÛgios.");
+            throw new SQLException("Erro ao listar rel√≥gios.");
         }
 
         return wristwatchList;
 	}
 
+	public ResultSet select2(String query) throws SQLException {
+		  ResultSet result;
+	    try (PreparedStatement statement = connection.prepareStatement(query)) {
+        result = statement.executeQuery();
+
+	    } catch (SQLException ex) {
+	        System.err.println(ex.getMessage());
 	
+	        if (ex.getMessage().equals("Erro ao consultar banco de dados")) {
+	    throw ex;
+		} else {
+		    throw new SQLException("Erro ao consultar banco de dados");
+		    }
+		}
+	    
+	    return result;
+	}
 
 }

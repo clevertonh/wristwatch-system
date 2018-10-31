@@ -2,6 +2,17 @@
 	pageEncoding="ISO-8859-1"%>
 
 <%@include file="home-open.jsp" %>
+<% String error = (String) request.getSession().getAttribute("error"); %>
+
+	<c:if test="${error != null}">
+		<div class="alert alert-warning alert-dismissible fade show" role="alert">
+		  <strong>Aviso!</strong> <%= error %>
+		  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		    <span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<% request.getSession().setAttribute("error", null); %>
+	</c:if>
 
 <form class="form-signin" action="" method="POST">
 	<h2 class="form-signin-heading">Atualizar Perfil</h2>

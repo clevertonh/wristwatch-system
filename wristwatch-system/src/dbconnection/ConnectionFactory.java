@@ -44,7 +44,7 @@ public class ConnectionFactory {
         } catch (IOException ex) {
             System.err.println(ex.getMessage());
 
-            throw new IOException("Erro ao obter informaÁıes do banco de dados.");
+            throw new IOException("Erro ao obter informa√ß√µes do banco de dados.");
         }
     }
 
@@ -62,11 +62,11 @@ public class ConnectionFactory {
         } catch (ClassNotFoundException ex) {
             System.err.println(ex.getMessage());
 
-            throw new ClassNotFoundException("Erro de conex„o ao banco de dados.");
+            throw new ClassNotFoundException("Erro de conex√£o ao banco de dados.");
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
 
-            throw new SQLException("Erro de conex„o ao banco de dados.");
+            throw new SQLException("Erro de conex√£o ao banco de dados.");
         }
 
         return connection;
