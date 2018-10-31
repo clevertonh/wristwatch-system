@@ -33,29 +33,29 @@
     </tr>
 
   	<tr>
-      <td><a href="${pageContext.servletContext.contextPath}/set-Analysis?query=1" style="color:#007bff"> Relação Marca e Revendedor </a></td>
+      <td><a href="${pageContext.servletContext.contextPath}/set-Analysis?query=1" style="color:#007bff"> Relação Marca com Revendedor </a></td>
     </tr>
     
   	<tr>
-      <td><a href="${pageContext.servletContext.contextPath}/set-Analysis?query=2" style="color:#007bff"> Relacionamento de Marcas e Coleções </a></td>
+      <td><a href="${pageContext.servletContext.contextPath}/set-Analysis?query=2" style="color:#007bff"> Relacionamento de Marcas com Coleções </a></td>
     </tr>
 
   	<tr>
-      <td><a href="${pageContext.servletContext.contextPath}/set-Analysis?query=3" style="color:#007bff"> Relacionamento de Marcas e Relógios </a></td>
+      <td><a href="${pageContext.servletContext.contextPath}/set-Analysis?query=3" style="color:#007bff"> Relacionamento de Marcas com Relógios </a></td>
     </tr>
     
   	<tr>
-      <td><a href="${pageContext.servletContext.contextPath}/set-Analysis?query=4" style="color:#007bff"> Relacionamento de Coleções e Relógios </a></td>
+      <td><a href="${pageContext.servletContext.contextPath}/set-Analysis?query=4" style="color:#007bff"> Relacionamento de Coleções com Relógios </a></td>
     </tr>
     
    	<tr>
-      <td><a href="${pageContext.servletContext.contextPath}" style="color:#007bff"> Média de Produtos Agrupados por Marcas </a></td>
+      <td><a href="${pageContext.servletContext.contextPath}/products-brand/Analysis" style="color:#007bff"> Média de Relógios Agrupados por Marcas </a></td>
     </tr>
     
   	<tr>
-      <td><a href="${pageContext.servletContext.contextPath}" style="color:#007bff"> Média de Produtos Agrupados por Coleção </a></td>
+      <td><a href="${pageContext.servletContext.contextPath}/products-collection/Analysis" style="color:#007bff"> Média de Relógios Agrupados por Coleção </a></td>
     </tr>
-    
+
   </tbody>
   
 </table>

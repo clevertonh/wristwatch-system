@@ -12,6 +12,10 @@
 
 <%@include  file="home-open.jsp" %>
 
+<div>
+	<p>Relatório que fornecerá uma listagem de todos os relógios que estão associados com uma dada coleção.</p>
+</div>
+
 <c:choose>
 
 <c:when test="${error == null && wristwatchList.size() > 0}">
@@ -41,7 +45,6 @@
   
 </table>
 
-		<% request.getSession().setAttribute("wristwatchList", null); %>
 </c:when>
 
 <c:when test="${error != null && wristwatchList.size() == 0 }">
@@ -62,12 +65,11 @@
 	    <span aria-hidden="true">&times;</span>
 	  </button>
 	</div>
-	<% request.getSession().setAttribute("error", null); %>
 </c:when>
 
 <c:otherwise>
 
-<form action="${pageContext.servletContext.contextPath}/collection-wristwatch/Analysis" method="POST">
+<form action="${pageContext.servletContext.contextPath}/collection-wristwatch/Analysis" method="GET">
 
 	<div class="form-group">
 		<label for="inputSalesman">Coleção*</label>
@@ -84,12 +86,13 @@
 		</select>
 	</div>
 	
-	<button type="submit" class="btn btn-primary">Cadastrar</button>
+	<button type="submit" class="btn btn-primary">Consultar</button>
 	
 </form>
 	<% request.getSession().setAttribute("collectionList", null); %>
 </c:otherwise>
 
 </c:choose>
-
+<% request.getSession().removeAttribute("wristwatchList"); %>
+<% request.getSession().setAttribute("error", null); %>
 <%@include  file="home-close.jsp" %>

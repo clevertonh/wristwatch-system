@@ -7,6 +7,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.sql.rowset.CachedRowSet;
+import javax.sql.rowset.RowSetProvider;
+
 import model.Collection;
 import model.Collection;
 import model.Collection;;
@@ -147,10 +150,13 @@ public class CollectionDao extends DAO<Collection> {
 
 	        return collectionList;
 	}
-	public ResultSet select(String query) throws SQLException {
-		  ResultSet result;
+	public CachedRowSet select(String query) throws SQLException {
+		  
+		  CachedRowSet crs = RowSetProvider.newFactory().createCachedRowSet();
+		  
 	    try (PreparedStatement statement = connection.prepareStatement(query)) {
-          result = statement.executeQuery();
+	    	ResultSet result = statement.executeQuery();
+	    	crs.populate(result);
 
 	    } catch (SQLException ex) {
 	        System.err.println(ex.getMessage());
@@ -162,7 +168,7 @@ public class CollectionDao extends DAO<Collection> {
 		    }
 		}
 	    
-	    return result;
+	    return crs;
 	}
-	
+
 }

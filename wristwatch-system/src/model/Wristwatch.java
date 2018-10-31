@@ -9,7 +9,7 @@ public class Wristwatch {
 	private Double plotPrice;
 	private String brand_name;
 	private String collection_name;
-	
+	private Double avg;
 	
 	public Integer getId() {
 		return id;
@@ -52,6 +52,12 @@ public class Wristwatch {
 	}
 	public void setCollection_name(String collection_name) {
 		this.collection_name = collection_name;
+	}
+	public Double getAvg() {
+		return avg;
+	}
+	public void setAvg(Double avg) {
+		this.avg = avg;
 	}
 
 

@@ -7,6 +7,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.sql.rowset.CachedRowSet;
+import javax.sql.rowset.RowSetProvider;
+
+
 import model.Sale;
 import model.Wristwatch;
 import model.Sale;
@@ -148,11 +152,14 @@ public class SaleDao extends DAO<Sale>{
         return saleList;
 	}
 	
-	public ResultSet select(String query) throws SQLException {
-		  ResultSet result;
+	public CachedRowSet select(String query) throws SQLException {
+		  
+		  CachedRowSet crs = RowSetProvider.newFactory().createCachedRowSet();
+		  
 	    try (PreparedStatement statement = connection.prepareStatement(query)) {
-            result = statement.executeQuery();
-
+	    	ResultSet result = statement.executeQuery();
+	    	crs.populate(result);
+	    	
 	    } catch (SQLException ex) {
 	        System.err.println(ex.getMessage());
 	
@@ -163,7 +170,7 @@ public class SaleDao extends DAO<Sale>{
 		    }
 		}
 	    
-	    return result;
+	    return crs;
 	}
 
 }

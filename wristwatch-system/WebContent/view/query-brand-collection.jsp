@@ -12,6 +12,10 @@
 
 <%@include  file="home-open.jsp" %>
 
+<div>
+	<p>Relatório que fornecerá uma listagem de todas as coleções que estão associadas a uma dada marca.</p>
+</div>
+
 <c:choose>
 
 <c:when test="${error == null && collectionList.size() > 0}">
@@ -37,10 +41,9 @@
   
 </table>
 
-		<% request.getSession().setAttribute("collectionList", null); %>
 </c:when>
 
-<c:when test="${error != null && collectionList.size() == 0 }">
+<c:when test="${error == null && collectionList.size() == 0 }">
 
 	<div class="alert alert-info alert-dismissible fade show" role="alert">
 	  <strong>Informação!</strong> Não foram encontrados dados para essa análise.
@@ -58,12 +61,11 @@
 	    <span aria-hidden="true">&times;</span>
 	  </button>
 	</div>
-	<% request.getSession().setAttribute("error", null); %>
 </c:when>
 
 <c:otherwise>
 
-<form action="${pageContext.servletContext.contextPath}/brand-collection/Analysis" method="POST">
+<form action="${pageContext.servletContext.contextPath}/brand-collection/Analysis" method="GET">
 
 	<div class="form-group">
 		<label for="inputBrand">Marca*</label>
@@ -80,12 +82,13 @@
 		</select>
 	</div>
 	
-	<button type="submit" class="btn btn-primary">Cadastrar</button>
+	<button type="submit" class="btn btn-primary">Consultar</button>
 	
 </form>
-	<% request.getSession().setAttribute("brandList", null); %>
+		<% request.getSession().removeAttribute("brandList"); %>
 </c:otherwise>
 
 </c:choose>
-
+<% request.getSession().removeAttribute("collectionList"); %>
+<% request.getSession().setAttribute("brandList", null); %>
 <%@include  file="home-close.jsp" %>

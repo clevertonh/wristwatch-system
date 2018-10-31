@@ -12,6 +12,10 @@
 
 <%@include  file="home-open.jsp" %>
 
+<div>
+	<p>Relatório que fornecerá uma listagem de todos os relógios que estão associados a uma dada marca.</p>
+</div>
+
 <c:choose>
 
 <c:when test="${error == null && wristwatchList.size() > 0}">
@@ -31,7 +35,7 @@
   	<tr>
       <th scope="row"><c:out value="${count}" /><c:set var="count" value="${count + 1}" scope="page"/></th>
       <td> <c:out value="${wristwatch.name}" /> </td>
-      <td> <c:out value="${wristwatch.brand_name}" /> </td>
+      <td> <c:out value="${wristwatch.collection_name}" /> </td>
       <td> <c:out value="${wristwatch.price}" /> </td>
     </tr>
   
@@ -41,7 +45,7 @@
   
 </table>
 
-		<% request.getSession().setAttribute("wristwatchList", null); %>
+
 </c:when>
 
 <c:when test="${error != null && wristwatchList.size() == 0 }">
@@ -62,12 +66,11 @@
 	    <span aria-hidden="true">&times;</span>
 	  </button>
 	</div>
-	<% request.getSession().setAttribute("error", null); %>
 </c:when>
 
 <c:otherwise>
 
-<form action="${pageContext.servletContext.contextPath}/brand-wristwatch/Analysis" method="POST">
+<form action="${pageContext.servletContext.contextPath}/brand-wristwatch/Analysis" method="GET">
 
 	<div class="form-group">
 		<label for="inputBrand">Marca*</label>
@@ -84,12 +87,13 @@
 		</select>
 	</div>
 	
-	<button type="submit" class="btn btn-primary">Cadastrar</button>
+	<button type="submit" class="btn btn-primary">Consultar</button>
 	
 </form>
-	<% request.getSession().setAttribute("brandList", null); %>
+<% request.getSession().removeAttribute("brandList"); %>
 </c:otherwise>
 
 </c:choose>
-
+<% request.getSession().removeAttribute("wristwatchList"); %>
+<% request.getSession().setAttribute("brandList", null); %>
 <%@include  file="home-close.jsp" %>

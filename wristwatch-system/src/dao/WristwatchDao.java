@@ -7,6 +7,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.sql.rowset.CachedRowSet;
+import javax.sql.rowset.RowSetProvider;
+
 import org.apache.catalina.connector.Request;
 
 import model.User;
@@ -212,11 +215,14 @@ public class WristwatchDao extends DAO<Wristwatch>{
         return wristwatchList;
 	}
 
-	public ResultSet select2(String query) throws SQLException {
-		  ResultSet result;
+	public CachedRowSet select2(String query) throws SQLException {
+		  
+		  CachedRowSet crs = RowSetProvider.newFactory().createCachedRowSet();
+		  
 	    try (PreparedStatement statement = connection.prepareStatement(query)) {
-        result = statement.executeQuery();
-
+	    	ResultSet result = statement.executeQuery();
+	    	crs.populate(result);
+	    	
 	    } catch (SQLException ex) {
 	        System.err.println(ex.getMessage());
 	
@@ -227,7 +233,6 @@ public class WristwatchDao extends DAO<Wristwatch>{
 		    }
 		}
 	    
-	    return result;
+	    return crs;
 	}
-
 }

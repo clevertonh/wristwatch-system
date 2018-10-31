@@ -13,10 +13,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.sql.rowset.CachedRowSet;
 
 import dao.BrandDao;
 import dao.CollectionDao;
 import dao.DAOFactory;
+import dao.PurchaseDao;
 import dao.SaleDao;
 import dao.WristwatchDao;
 import model.Brand;
@@ -38,7 +40,9 @@ urlPatterns = {
 		"/brand-salesman/Analysis",
 		"/brand-collection/Analysis",
 		"/brand-wristwatch/Analysis",
-		"/collection-wristwatch/Analysis"
+		"/collection-wristwatch/Analysis",
+		"/products-brand/Analysis",
+		"/products-collection/Analysis"
 	})
 public class DataAnalysisController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -191,17 +195,17 @@ public class DataAnalysisController extends HttpServlet {
 			if(myQuery == 1) {
 				
 				try (DAOFactory daoFactory = new DAOFactory()){
-					CollectionDao c = daoFactory.getCollectionDao();
-					List<Collection> collectionList;
+					BrandDao b = daoFactory.getBrandDao();
+					List<Brand> brandList;
 					
-					collectionList = c.all();
+					brandList = b.all();
 					
-					session.setAttribute("collectionList", collectionList);
+					session.setAttribute("brandList", brandList);
 				} catch (ClassNotFoundException | IOException | SQLException ex) {
 	                session.setAttribute("error", ex.getMessage());
 	            }
 				
-				dispatcher = request.getRequestDispatcher("/view/query-brand-salesman.jsp");
+				response.sendRedirect(request.getContextPath() + "/view/query-brand-salesman.jsp");
 			}
 			else if(myQuery == 2) {
 				try (DAOFactory daoFactory = new DAOFactory()){
@@ -210,12 +214,12 @@ public class DataAnalysisController extends HttpServlet {
 					
 					 brandList = b.all();
 					
-					session.setAttribute("collectionList", brandList);
+					session.setAttribute("brandList", brandList);
 				} catch (ClassNotFoundException | IOException | SQLException ex) {
 	                session.setAttribute("error", ex.getMessage());
 	            }
 				
-				dispatcher = request.getRequestDispatcher("/view/query-brand-collection.jsp");
+				response.sendRedirect(request.getContextPath() + "/view/query-brand-collection.jsp");
 			}
 			else if(myQuery == 3) {
 				try (DAOFactory daoFactory = new DAOFactory()){
@@ -224,12 +228,12 @@ public class DataAnalysisController extends HttpServlet {
 					
 					 brandList = b.all();
 					
-					session.setAttribute("collectionList", brandList);
+					session.setAttribute("brandList", brandList);
 				} catch (ClassNotFoundException | IOException | SQLException ex) {
 	                session.setAttribute("error", ex.getMessage());
 	            }
 				
-				dispatcher = request.getRequestDispatcher("/view/query-brand-wristwatch.jsp");
+				response.sendRedirect(request.getContextPath() + "/view/query-brand-wristwatch.jsp");
 			}
 			else if(myQuery == 4) {
 				try (DAOFactory daoFactory = new DAOFactory()){
@@ -243,29 +247,30 @@ public class DataAnalysisController extends HttpServlet {
 	                session.setAttribute("error", ex.getMessage());
 	            }
 				
-				dispatcher = request.getRequestDispatcher("/view/query-collection-wristwatch.jsp");
+				response.sendRedirect(request.getContextPath() + "/view/query-collection-wristwatch.jsp");
 			}
 			else {
-	            dispatcher = request.getRequestDispatcher("/view/data-analysis.jsp");
+				response.sendRedirect(request.getContextPath() + "/view/data-analysis.jsp");
 			}
 			
-			dispatcher.forward(request, response);
+			
 			break;
 		case "/brand-salesman/Analysis":
 			try (DAOFactory daoFactory = new DAOFactory()) {
-            	SaleDao dao = daoFactory.getSaleDao();
-            	ResultSet result;
+            	PurchaseDao dao = daoFactory.getPurchaseDao();
+            	CachedRowSet result;
             	List<Salesman> salesmanList = new ArrayList<>();
             	String query;
 
-            	query = "";
+            	query = "SELECT salesman_name FROM wristwatch.purchase WHERE brand_name = '" + request.getParameter("brand") + "';";
             	
             	result = dao.select(query);
+            	System.out.println(query);
             	
             	while (result.next()) {
                 	Salesman s = new Salesman();
                 	
-                	s.setName(result.getString("name"));
+                	s.setName(result.getString("salesman_name"));
 
                     salesmanList.add(s);
                 }
@@ -281,12 +286,12 @@ public class DataAnalysisController extends HttpServlet {
 		case "/brand-collection/Analysis":
 			try (DAOFactory daoFactory = new DAOFactory()) {
             	CollectionDao dao = daoFactory.getCollectionDao();
-            	ResultSet result;
+            	CachedRowSet result;
             	List<Collection> collectionList = new ArrayList<>();
             	String query;
 
-            	query = "";
-            	
+            	query = "SELECT * FROM wristwatch.collection WHERE brand_name = '" + request.getParameter("brand") + "';";
+            	System.out.println(query);
             	result = dao.select(query);
             	
             	while (result.next()) {
@@ -309,12 +314,12 @@ public class DataAnalysisController extends HttpServlet {
 		case "/brand-wristwatch/Analysis":
 			try (DAOFactory daoFactory = new DAOFactory()) {
             	WristwatchDao dao = daoFactory.getWristwatchDao();
-            	ResultSet result;
+            	CachedRowSet result;
             	List<Wristwatch> wristwatchList = new ArrayList<>();
             	String query;
 
-            	query = "";
-            	
+            	query = "SELECT name, price, collection_name FROM wristwatch.wristwatch WHERE brand_name = '" + request.getParameter("brand") + "';";
+            	System.out.println(query);
             	result = dao.select2(query);
             	
             	while (result.next()) {
@@ -338,19 +343,19 @@ public class DataAnalysisController extends HttpServlet {
 		case "/collection-wristwatch/Analysis":
 			try (DAOFactory daoFactory = new DAOFactory()) {
             	WristwatchDao dao = daoFactory.getWristwatchDao();
-            	ResultSet result;
+            	CachedRowSet result;
             	List<Wristwatch> wristwatchList = new ArrayList<>();
             	String query;
 
-            	query = "";
-            	
+            	query = "SELECT name, price, brand_name FROM wristwatch.wristwatch WHERE collection_name = '" + request.getParameter("collection") + "';";
+            	System.out.println(query);
             	result = dao.select2(query);
             	
             	while (result.next()) {
             		Wristwatch w = new Wristwatch();
                 	
                 	w.setName(result.getString("name"));
-                	w.setCollection_name(result.getString("collection_name"));
+                	w.setBrand_name(result.getString("brand_name"));
                 	w.setPrice(result.getDouble("price"));
                 	
                 	wristwatchList.add(w);
@@ -362,6 +367,66 @@ public class DataAnalysisController extends HttpServlet {
             }
             
             dispatcher = request.getRequestDispatcher("/view/query-collection-wristwatch.jsp");
+			dispatcher.forward(request, response);
+			break;
+		case "/products-brand/Analysis":
+			try (DAOFactory daoFactory = new DAOFactory()) {
+            	WristwatchDao dao = daoFactory.getWristwatchDao();
+            	CachedRowSet result;
+            	List<Wristwatch> wristwatchList = new ArrayList<>();
+            	String query;
+
+            	query = "SELECT brand_name, AVG(price) AS media " + 
+            			"FROM wristwatch.wristwatch GROUP BY brand_name;";
+            	
+            	System.out.println(query);
+            	result = dao.select2(query);
+            	
+            	while (result.next()) {
+            		Wristwatch w = new Wristwatch();
+                	
+                	w.setBrand_name(result.getString("brand_name"));
+                	w.setAvg(result.getDouble("media"));
+                	
+                	wristwatchList.add(w);
+                }
+            	
+                session.setAttribute("wristwatchList", wristwatchList);
+            } catch (ClassNotFoundException | IOException | SQLException ex) {
+                session.setAttribute("error", ex.getMessage());
+            }
+            
+            dispatcher = request.getRequestDispatcher("/view/query-products-brand.jsp");
+			dispatcher.forward(request, response);
+			break;
+		case "/products-collection/Analysis":
+			try (DAOFactory daoFactory = new DAOFactory()) {
+            	WristwatchDao dao = daoFactory.getWristwatchDao();
+            	CachedRowSet result;
+            	List<Wristwatch> wristwatchList = new ArrayList<>();
+            	String query;
+
+            	query = "SELECT collection_name, AVG(price) AS media " + 
+            			"FROM wristwatch.wristwatch GROUP BY collection_name;";
+            	
+            	System.out.println(query);
+            	result = dao.select2(query);
+            	
+            	while (result.next()) {
+            		Wristwatch w = new Wristwatch();
+                	
+                	w.setCollection_name(result.getString("collection_name"));
+                	w.setAvg(result.getDouble("media"));
+                	
+                	wristwatchList.add(w);
+                }
+            	
+                session.setAttribute("wristwatchList", wristwatchList);
+            } catch (ClassNotFoundException | IOException | SQLException ex) {
+                session.setAttribute("error", ex.getMessage());
+            }
+            
+            dispatcher = request.getRequestDispatcher("/view/query-products-collection.jsp");
 			dispatcher.forward(request, response);
 			break;
 		}

@@ -7,6 +7,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.sql.rowset.CachedRowSet;
+import javax.sql.rowset.RowSetProvider;
+
 import model.Purchase;
 import model.Sale;
 
@@ -146,4 +149,26 @@ public class PurchaseDao extends DAO<Purchase>{
         return purchaseList;
 	}
 
+	public CachedRowSet select(String query) throws SQLException {
+		  
+		  CachedRowSet crs = RowSetProvider.newFactory().createCachedRowSet();
+		  
+	    try (PreparedStatement statement = connection.prepareStatement(query)) {
+	    	ResultSet result = statement.executeQuery();
+	    	crs.populate(result);
+
+	    } catch (SQLException ex) {
+	        System.err.println(ex.getMessage());
+	
+	        if (ex.getMessage().equals("Erro ao consultar banco de dados")) {
+	    throw ex;
+		} else {
+		    throw new SQLException("Erro ao consultar banco de dados");
+		    }
+		}
+	    
+	    return crs;
+	}
+
+	
 }

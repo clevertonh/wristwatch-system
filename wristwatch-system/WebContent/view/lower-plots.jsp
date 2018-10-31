@@ -14,6 +14,10 @@
 
 <%@include file="home-open.jsp" %>
 
+<div>
+	<p>Relatório que fornecerá uma listagem dos relógios cadastrados com os menores valores de parcelas.</p>
+</div>
+
 <% String error = (String) request.getSession().getAttribute("error"); %>
 
 <% List<Wristwatch> wristwatchList = (List<Wristwatch>) request.getSession().getAttribute("wristwatchList"); %>

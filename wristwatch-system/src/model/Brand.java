@@ -6,7 +6,6 @@ public class Brand {
 	private String country;
 	private String creation;
 	
-	
 	public String getCreation() {
 		return creation;
 	}
@@ -25,6 +24,5 @@ public class Brand {
 	public void setCountry(String country) {
 		this.country = country;
 	}
-	
 	
 }
