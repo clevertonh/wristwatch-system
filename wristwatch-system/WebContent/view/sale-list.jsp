@@ -20,7 +20,8 @@
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">ID-Relógio</th>
+      <th scope="col">Identificação</th>
+      <th scope="col">Nome</th>
       <th scope="col">Vendedor</th>
       <th scope="col">Atualizar</th>
       <th scope="col">Excluir</th>
@@ -33,6 +34,7 @@
   	<tr>
       <th scope="row"><c:out value="${count}" /><c:set var="count" value="${count + 1}" scope="page"/></th>
       <td> <c:out value="${Sale.id_wristwatch}" /> </td>
+      <td> <c:out value="${Sale.wristwatch_name}" /> </td>
       <td> <c:out value="${Sale.salesman_name}" /> </td>
       <td><a style="color:#007bff"  href="${pageContext.servletContext.contextPath}/Sale/set-update?id=<c:out value="${Sale.id_wristwatch}"/>&salesman=<c:out value="${Sale.salesman_name}"/>">Atualizar</a></td>
       <td><a style="color:#007bff" href="${pageContext.servletContext.contextPath}/Sale/delete?id=<c:out value="${Sale.id_wristwatch}"/>&salesma=<c:out value="${Sale.salesman_name}"/>">Excluir</a></td>

@@ -2,6 +2,7 @@ package controller;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.RequestDispatcher;
@@ -11,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import javax.sql.rowset.CachedRowSet;
 
 import dao.SaleDao;
 import dao.DAOFactory;
@@ -100,10 +102,25 @@ public class SaleController extends HttpServlet {
 
 			try (DAOFactory daoFactory = new DAOFactory()) {
                 dao = daoFactory.getSaleDao();
+                List<Sale> saleList = new ArrayList<>();
+                CachedRowSet result;
+                String query = "SELECT w.name, s.id_wristwatch, s.salesman_name " + 
+                			   "FROM wristwatch.sale s, wristwatch.wristwatch w " + 
+                		       "WHERE s.id_wristwatch = w.id;";
                 
-                List<Sale> daoList = dao.all();
+                result = dao.select(query);
                 
-                request.setAttribute("saleList", daoList);
+                while (result.next()) {
+                	Sale s = new Sale();
+                	
+                	s.setId_wristwatch(result.getInt("id_wristwatch"));
+                	s.setSalesman_name(result.getString("salesman_name"));
+                	s.setWristwatch_name(result.getString("name"));
+                	
+                    saleList.add(s);
+                }
+                
+                request.setAttribute("saleList", saleList);
             } catch (ClassNotFoundException | IOException | SQLException | SecurityException ex) {
             	session.setAttribute("error", ex.getMessage());
             }

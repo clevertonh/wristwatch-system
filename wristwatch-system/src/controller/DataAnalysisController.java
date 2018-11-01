@@ -377,7 +377,7 @@ public class DataAnalysisController extends HttpServlet {
             	String query;
 
             	query = "SELECT brand_name, AVG(price) AS media " + 
-            			"FROM wristwatch.wristwatch GROUP BY brand_name;";
+            			"FROM wristwatch.wristwatch GROUP BY brand_name ORDER BY media LIMIT 10;";
             	
             	System.out.println(query);
             	result = dao.select2(query);
@@ -407,7 +407,7 @@ public class DataAnalysisController extends HttpServlet {
             	String query;
 
             	query = "SELECT collection_name, AVG(price) AS media " + 
-            			"FROM wristwatch.wristwatch GROUP BY collection_name;";
+            			"FROM wristwatch.wristwatch GROUP BY collection_name ORDER BY media LIMIT 10;";
             	
             	System.out.println(query);
             	result = dao.select2(query);

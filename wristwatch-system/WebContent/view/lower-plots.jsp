@@ -94,7 +94,7 @@
 	  	<input type="number" name="floorValue" class="form-control" min="1.00" max="1000000.00" step="0.01" id="FloorValue"/>
 	</div>
 	
-  	<button type="submit" class="btn btn-primary">Atualizar</button>
+  	<button type="submit" class="btn btn-primary">Consultar</button>
   	
 </form>
 

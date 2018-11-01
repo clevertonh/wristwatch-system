@@ -43,6 +43,43 @@
 </table>
 
 
+  
+	<canvas id="myChart" width="200" height="200"></canvas>
+	<script>
+		var ctx = document.getElementById("myChart");
+		
+		var myChart = new Chart(ctx, {
+			type: 'bar',
+			data: {
+				 labels: [
+					  <% for(int i = 0; i < wristwatchList.size(); i+=1){ %>"<%= wristwatchList.get(i).getBrand_name() %>"<% if(i < wristwatchList.size() - 1) { %>,<% } %><% } %>
+				 ],
+				 datasets: [{
+					 label: 'Média',
+					 data: [
+					 	<% for(int i = 0; i < wristwatchList.size(); i+=1){ %><%= wristwatchList.get(i).getAvg() %><% if(i < wristwatchList.size() - 1) { %>, <% } %><% } %>
+				 	 ],
+			            backgroundColor: 'blue',
+			            borderColor: 'black',
+			            borderWidth: 1
+				 }]
+			},
+			options: {
+				scales: {
+		            yAxes: [{
+		                ticks: {
+		                    beginAtZero:true
+		                }
+		            }]
+		        },
+		        title: {
+		        	display: true,
+		        	text: 'Média de preços de relógios'
+		        }
+			}
+		});
+	</script>
+	
 </c:when>
 
 <c:when test="${error != null && wristwatchList.size() == 0 }">
