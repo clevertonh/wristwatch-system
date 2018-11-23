@@ -1,0 +1,44 @@
+[
+    {
+        "nome": "Montblanc Star Legacy Automatic Date 42 mm",
+        "preco": "R$ 12.060,00",
+        "colecao": "Star Legacy",
+        "marca": "Montblanc",
+        "parcelas": "10XR$1.570,00"
+    },
+    {
+        "nome": "Montblanc Star Classique Automatic",
+        "preco": "R$ 11.871,00",
+        "colecao": "Star Classique",
+        "marca": "Montblanc",
+        "parcelas": "10XR$1.540,00"
+    },
+    {
+        "nome": "Montblanc Star Classique Automatic",
+        "preco": "R$ 17.460,00",
+        "colecao": "Star Classique",
+        "marca": "Montblanc",
+        "parcelas": "10XR$2.270,00"
+    },
+    {
+        "nome": "Montblanc TimeWalker ChronoVoyager UTC",
+        "preco": "R$ 19.890,00",
+        "colecao": "TimeWalker",
+        "marca": "Montblanc",
+        "parcelas": "10XR$2.580,00"
+    },
+    {
+        "nome": "Vintage Tachydate",
+        "preco": "R$ 172.260,00",
+        "colecao": "Villeret",
+        "marca": "Montblanc",
+        "parcelas": "10XR$22.400,00"
+    },
+    {
+        "nome": "Vintage Tachydate",
+        "preco": "R$ 179.550,00",
+        "colecao": "Villeret",
+        "marca": "Montblanc",
+        "parcelas": "10XR$23.300,00"
+    }
+]
