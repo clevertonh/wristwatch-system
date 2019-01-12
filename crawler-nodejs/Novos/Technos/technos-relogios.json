@@ -1,0 +1,2725 @@
+[
+    {
+        "nome": "Relógio Technos Masculino Steel Preto - 2115MOU/2P",
+        "preco": "R$ 279,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$27,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Performance Racer Dourado - 2115MNZ/4A",
+        "preco": "R$ 299,90",
+        "colecao": "Performance",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2115MKS/8P",
+        "preco": "R$ 249,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$24,99"
+    },
+    {
+        "nome": "Relógio Technos Racer Masculino 6P25BN/8P",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Golf 2315ACF/5P Bicolor",
+        "preco": "R$ 300,00",
+        "colecao": "Golf",
+        "marca": "Technos",
+        "parcelas": "10XdeR$30,00"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel Preto - 6P29AJP/2A",
+        "preco": "R$ 319,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$31,99"
+    },
+    {
+        "nome": "Relógio Technos Calendário Lunar Masculino Preto - 6P21AA/4P",
+        "preco": "R$ 459,90",
+        "colecao": "Calendário Lunar",
+        "marca": "Technos",
+        "parcelas": "10XdeR$45,99"
+    },
+    {
+        "nome": "Relógio Technos Unissex Slim GM10YI/1P",
+        "preco": "R$ 439,90",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$43,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2315KZP/4P - Dourado",
+        "preco": "R$ 379,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$37,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel 2115MLB/0P",
+        "preco": "R$ 259,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel 2115LAN/4P",
+        "preco": "R$ 299,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2117LAH/1P",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2315ACQ/4A - Dourado",
+        "preco": "R$ 339,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$33,99"
+    },
+    {
+        "nome": "Relógio Technos Executive Masculino Marrom 2115KZD/2K",
+        "preco": "R$ 359,90",
+        "colecao": "Executive",
+        "marca": "Technos",
+        "parcelas": "10XdeR$35,99"
+    },
+    {
+        "nome": "Relógio Technos Riviera Prata/Dourado 2415CG/5B",
+        "preco": "R$ 479,90",
+        "colecao": "Riviera",
+        "marca": "Technos",
+        "parcelas": "10XdeR$47,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Analógico - 2115KSW/1R",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Skymaster Masculino JS25BG/0M Dourado",
+        "preco": "R$ 649,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$64,99"
+    },
+    {
+        "nome": "Relógio Technos Legacy Masculino Ana Digi  - T205FJ/8P",
+        "preco": "R$ 719,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$71,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel Prata - 2305AX/1P",
+        "preco": "R$ 259,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Unissex Slim Rosé - 9T13AA/2A",
+        "preco": "R$ 459,90",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$45,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Ts Digiana Prata - BJK203AAC/1P",
+        "preco": "R$ 599,90",
+        "colecao": "Ts Digiana",
+        "marca": "Technos",
+        "parcelas": "10XdeR$59,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Ts Digiana Dourado - BJK203AAD/4P",
+        "preco": "R$ 639,90",
+        "colecao": "Ts Digiana",
+        "marca": "Technos",
+        "parcelas": "10XdeR$63,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Ts Digiana Azul - BJK203AAE/4A",
+        "preco": "R$ 659,90",
+        "colecao": "Ts Digiana",
+        "marca": "Technos",
+        "parcelas": "10XdeR$65,99"
+    },
+    {
+        "nome": "Relógio Technos Calendário Lunar Masculino Couro - 6P80AD/2B",
+        "preco": "R$ 379,90",
+        "colecao": "Calendário Lunar",
+        "marca": "Technos",
+        "parcelas": "10XdeR$37,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Performance Racer Prata - 2305AW/1K",
+        "preco": "R$ 259,90",
+        "colecao": "Performance",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Classic Steel Prata - 2115MNU/1B",
+        "preco": "R$ 259,90",
+        "colecao": "Classic Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Automatico Masculino 8205NW/0P",
+        "preco": "R$ 599,90",
+        "colecao": "Automatico",
+        "marca": "Technos",
+        "parcelas": "10XdeR$59,99"
+    },
+    {
+        "nome": "Relógio Technos Golf Masculino 2115LAQ/2C",
+        "preco": "R$ 379,90",
+        "colecao": "Golf",
+        "marca": "Technos",
+        "parcelas": "10XdeR$37,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2315ACP/1A",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Militar 2115MLJ/1P",
+        "preco": "R$ 272,00",
+        "colecao": "Militar",
+        "marca": "Technos",
+        "parcelas": "10XdeR$27,20"
+    },
+    {
+        "nome": "Relógio Technos Masculino Militar Prata",
+        "preco": "R$ 272,00",
+        "colecao": "Militar",
+        "marca": "Technos",
+        "parcelas": "10XdeR$27,20"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel 2115MNI/0P",
+        "preco": "R$ 259,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Racer Masculino 2115MGO/1P",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Executive Masculino 2115KTE/2X Dourado",
+        "preco": "R$ 233,94",
+        "colecao": "Executive",
+        "marca": "Technos",
+        "parcelas": "10XdeR$23,39"
+    },
+    {
+        "nome": "Relógio Technos Skymaster JS25BF/4P Dourado",
+        "preco": "R$ 689,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$68,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Ts Carbon Prata - 6P27CB/1T",
+        "preco": "R$ 589,90",
+        "colecao": "Carbon",
+        "marca": "Technos",
+        "parcelas": "10XdeR$58,99"
+    },
+    {
+        "nome": "Relógio Technos Performance - 2115KQB/8L",
+        "preco": "R$ 249,90",
+        "colecao": "Performance",
+        "marca": "Technos",
+        "parcelas": "10XdeR$24,99"
+    },
+    {
+        "nome": "Relógio Technos Steel Masculino Analógico - 2115KNL/1K",
+        "preco": "R$ 259,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Executive Masculino Analógico - 1N12MQ/5B",
+        "preco": "R$ 379,90",
+        "colecao": "Executive",
+        "marca": "Technos",
+        "parcelas": "10XdeR$37,99"
+    },
+    {
+        "nome": "Relógio Technos Steel Masculino Analógico - 2115GY/1P",
+        "preco": "R$ 249,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$24,99"
+    },
+    {
+        "nome": "Relógio Technos Steel Masculino Analógico - 2115GY/1K",
+        "preco": "R$ 239,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$23,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Classic Ceramic/Saphire Dourado - JS15FI/4P",
+        "preco": "R$ 839,90",
+        "colecao": "Ceramic",
+        "marca": "Technos",
+        "parcelas": "10XdeR$83,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Riviera Preto - 2350AC/4P",
+        "preco": "R$ 479,90",
+        "colecao": "Riviera",
+        "marca": "Technos",
+        "parcelas": "10XdeR$47,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Prata - 6P22AE/1P",
+        "preco": "R$ 339,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$33,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Classic Legacy Dourado - JS15BE/4K",
+        "preco": "R$ 759,90",
+        "colecao": "Classic Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$75,99"
+    },
+    {
+        "nome": "Relógio Technos Unissex Classic Slim Dourado - 9T22AK/4X",
+        "preco": "R$ 479,90",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$47,99"
+    },
+    {
+        "nome": "Relógio Technos Unissex Slim Preto - 9U13AA/4P",
+        "preco": "R$ 539,90",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$53,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Dourado - 2115MOK/4A",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel Dourado - 2115MPA/4P",
+        "preco": "R$ 299,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel Prata - 6P29AJO/1K",
+        "preco": "R$ 299,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel Prata - 2115MOT/1P",
+        "preco": "R$ 259,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel Prata - 6P29AJK/1P",
+        "preco": "R$ 299,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Classic Steel Prata - 2115MNR/1A",
+        "preco": "R$ 259,90",
+        "colecao": "Classic Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Slim Masculino GL15AN/4A",
+        "preco": "R$ 479,90",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$47,99"
+    },
+    {
+        "nome": "Relógio Technos Grandtech Masculino 6P57AC/2C",
+        "preco": "R$ 559,90",
+        "colecao": "Grandtech",
+        "marca": "Technos",
+        "parcelas": "10XdeR$55,99"
+    },
+    {
+        "nome": "Relógio Technos Unissex Slim GL20HJ/2M",
+        "preco": "R$ 439,90",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$43,99"
+    },
+    {
+        "nome": "Relógio Technos Legacy Masculino OS2ABE/1C",
+        "preco": "R$ 736,00",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$73,60"
+    },
+    {
+        "nome": "Relógio Technos Steel Masculino 2315KZM/1A",
+        "preco": "R$ 269,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$26,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2315ACP/1P - Prata",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2115MGR/1P - Prata",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Slim GM10YH/2A",
+        "preco": "R$ 459,90",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$45,99"
+    },
+    {
+        "nome": "Relógio Technos Legacy Masculino OS2ABF/4A",
+        "preco": "R$ 769,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$76,99"
+    },
+    {
+        "nome": "Relógio Technos Riviera Prata 2415CI/1A",
+        "preco": "R$ 399,90",
+        "colecao": "Riviera",
+        "marca": "Technos",
+        "parcelas": "10XdeR$39,99"
+    },
+    {
+        "nome": "Relógio Technos Steel Masculino 2115LAN/4A",
+        "preco": "R$ 299,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Legacy Masculino Preto JS26AG/4P",
+        "preco": "R$ 779,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$77,99"
+    },
+    {
+        "nome": "Relógio Technos Legacy Masculino Dourado JS26AE/4X",
+        "preco": "R$ 759,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$75,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 6P29AIQ/K8P",
+        "preco": "R$ 349,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$34,99"
+    },
+    {
+        "nome": "Relógio Technos Golf 6P25BK/1B Prata",
+        "preco": "R$ 383,92",
+        "colecao": "Golf",
+        "marca": "Technos",
+        "parcelas": "10XdeR$38,39"
+    },
+    {
+        "nome": "Relógio Technos Racer  6P25BI/8P Prata",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Racer 2115KTD/1A Prata",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Legacy Masculino Cronógrafo - OS20IB/4X",
+        "preco": "R$ 759,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$75,99"
+    },
+    {
+        "nome": "Relógio Technos Legacy Masculino Cronógrafo - OS1AAP/4P",
+        "preco": "R$ 759,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$75,99"
+    },
+    {
+        "nome": "Relógio Technos Executive Masculino Analógico - 1N12MP/4X",
+        "preco": "R$ 359,90",
+        "colecao": "Executive",
+        "marca": "Technos",
+        "parcelas": "10XdeR$35,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Classic Ceramic/Saphire Prata - JS15FJ/1A",
+        "preco": "R$ 799,90",
+        "colecao": "Ceramic",
+        "marca": "Technos",
+        "parcelas": "10XdeR$79,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Dourado - 2115MPI/4A",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Classic Steel Prata - 2115MOG/K0A",
+        "preco": "R$ 269,90",
+        "colecao": "Classic Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$26,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Classic Steel Prata - 2115MNX/K1P",
+        "preco": "R$ 269,90",
+        "colecao": "Classic Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$26,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Classic Automatico Dourado - 8205OG/2P",
+        "preco": "R$ 592,00",
+        "colecao": "Automatico",
+        "marca": "Technos",
+        "parcelas": "10XdeR$59,20"
+    },
+    {
+        "nome": "Relógio Technos Masculino Classic Automatico Prata - 8205OE/1K",
+        "preco": "R$ 739,90",
+        "colecao": "Automatico",
+        "marca": "Technos",
+        "parcelas": "10XdeR$73,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Performance Racer Prata - 2117LAN/1P",
+        "preco": "R$ 259,90",
+        "colecao": "Performance",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel Prata - 2115MPK/1A",
+        "preco": "R$ 259,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Classic Automatico Dourado - 8205NL/4K",
+        "preco": "R$ 779,90",
+        "colecao": "Automatico",
+        "marca": "Technos",
+        "parcelas": "10XdeR$77,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Classic Steel Dourado - 2305AM/4C",
+        "preco": "R$ 439,90",
+        "colecao": "Classic Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$43,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel Dourado - 2305AY/4X",
+        "preco": "R$ 299,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel Dourado - 2305AZ/2B",
+        "preco": "R$ 259,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel Preto - 2305BA/2A",
+        "preco": "R$ 279,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$27,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Prata - 2115MOL/1B",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Dourado - 2115MOM/8B",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Skymaster Dourado - JS15FE/4P",
+        "preco": "R$ 679,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$67,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Skymaster Prata - JS15FF/1A",
+        "preco": "R$ 639,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$63,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Skymaster Dourado - JS15FE/4C",
+        "preco": "R$ 680,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$68,09"
+    },
+    {
+        "nome": "Relógio Technos Masculino Riviera Dourado - 2350AD/4X",
+        "preco": "R$ 459,90",
+        "colecao": "Riviera",
+        "marca": "Technos",
+        "parcelas": "10XdeR$45,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Prata - 2117LAR/1P",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Dourado - 2117LAS/4X",
+        "preco": "R$ 339,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$33,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Legacy Dourado - JS16AB/4P",
+        "preco": "R$ 899,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$89,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Legacy Grafite - JS16AA/4C",
+        "preco": "R$ 919,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$91,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Classic Legacy Dourado - JS15BE/4X",
+        "preco": "R$ 959,90",
+        "colecao": "Classic Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$95,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Performance Racer Prata - 2115KSX/1A",
+        "preco": "R$ 259,90",
+        "colecao": "Performance",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Performance Racer Prata - 2115KSX/1P",
+        "preco": "R$ 259,90",
+        "colecao": "Performance",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Classic Steel Dourado - 2115KPR/4A",
+        "preco": "R$ 439,90",
+        "colecao": "Classic Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$43,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Prata - 2315ACI/1A",
+        "preco": "R$ 319,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$31,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Dourado - 2315ACK/4P",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Prata - 2315KZO/1P",
+        "preco": "R$ 319,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$31,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Dourado - 2315KZP/4B",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Prata - 2315KZN/8R",
+        "preco": "R$ 249,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$24,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Dourado - 2315KZP/4A",
+        "preco": "R$ 359,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$35,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Classic Steel Dourado - 2115MOF/4P",
+        "preco": "R$ 299,90",
+        "colecao": "Classic Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Unissex Classic Slim Prata - 9T22AI/1A",
+        "preco": "R$ 479,90",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$47,99"
+    },
+    {
+        "nome": "Relógio Technos Unissex Slim Dourado - 9T22AJ/2B",
+        "preco": "R$ 479,90",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$47,99"
+    },
+    {
+        "nome": "Relógio Technos Unissex Classic Slim Rosé - 9T22AL/4C",
+        "preco": "R$ 499,90",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$49,99"
+    },
+    {
+        "nome": "Relógio Technos Unissex Slim Dourado - 9T13AB/4B",
+        "preco": "R$ 479,90",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$47,99"
+    },
+    {
+        "nome": "Relógio Technos Unissex Slim Prata - 9U13AC/1B",
+        "preco": "R$ 439,90",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$43,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Essence Dourado - F06111AA/4W",
+        "preco": "R$ 999,90",
+        "colecao": "Essence",
+        "marca": "Technos",
+        "parcelas": "10XdeR$99,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Essence Prata - F06111AB/1W",
+        "preco": "R$ 959,90",
+        "colecao": "Essence",
+        "marca": "Technos",
+        "parcelas": "10XdeR$95,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Essence Preto - F06111AC/4W",
+        "preco": "R$ 1.019,90",
+        "colecao": "Essence",
+        "marca": "Technos",
+        "parcelas": "10XdeR$101,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel Prata - 2115MOZ/1A",
+        "preco": "R$ 259,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Dourado - 2115MPC/4K",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel Dourado - 6P29AJN/4X",
+        "preco": "R$ 339,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$33,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Prata - 2115MPD/1A",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Automatico Prata - 82S7AA/1A",
+        "preco": "R$ 759,90",
+        "colecao": "Automatico",
+        "marca": "Technos",
+        "parcelas": "10XdeR$75,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Automatico Preto - 82S7AC/4P",
+        "preco": "R$ 819,90",
+        "colecao": "Automatico",
+        "marca": "Technos",
+        "parcelas": "10XdeR$81,99"
+    },
+    {
+        "nome": "Relógio Technos Unissex Slim Rosé - 1L45AY/4C",
+        "preco": "R$ 499,90",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$49,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Automatico Dourado - 82S7AB/4X",
+        "preco": "R$ 799,90",
+        "colecao": "Automatico",
+        "marca": "Technos",
+        "parcelas": "10XdeR$79,99"
+    },
+    {
+        "nome": "Relógio Technos Unissex Slim Dourado - 1L45AZ/4B",
+        "preco": "R$ 479,90",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$47,99"
+    },
+    {
+        "nome": "Relógio Technos Unissex Classic Slim Dourado - 2025LTK/4A",
+        "preco": "R$ 519,90",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$51,99"
+    },
+    {
+        "nome": "Relógio Technos Unissex Classic Slim Prata - 2025LTL/1K",
+        "preco": "R$ 439,90",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$43,99"
+    },
+    {
+        "nome": "Relógio Technos Unissex Classic Slim Preto - 2025LTM/4P",
+        "preco": "R$ 499,90",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$49,99"
+    },
+    {
+        "nome": "Relógio Technos Calendário Lunar Masculino Dourado - 6P80AC/4P",
+        "preco": "R$ 399,90",
+        "colecao": "Calendário Lunar",
+        "marca": "Technos",
+        "parcelas": "10XdeR$39,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Prata - 2115MOW/1B",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel Dourado - 2115MOS/4A",
+        "preco": "R$ 299,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Skydiver Prata - T20562/1R",
+        "preco": "R$ 519,90",
+        "colecao": "Skydiver",
+        "marca": "Technos",
+        "parcelas": "10XdeR$51,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Skydiver Prata - T20562/1L",
+        "preco": "R$ 519,90",
+        "colecao": "Skydiver",
+        "marca": "Technos",
+        "parcelas": "10XdeR$51,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Skydiver Prata - T20562/1B",
+        "preco": "R$ 519,90",
+        "colecao": "Skydiver",
+        "marca": "Technos",
+        "parcelas": "10XdeR$51,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Classic Steel Prata - 2115KQK/1C",
+        "preco": "R$ 259,90",
+        "colecao": "Classic Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Skydiver Prata - T20562/1P",
+        "preco": "R$ 519,90",
+        "colecao": "Skydiver",
+        "marca": "Technos",
+        "parcelas": "10XdeR$51,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Classic Steel Dourado - 6P29AJI/4K",
+        "preco": "R$ 339,90",
+        "colecao": "Classic Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$33,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Performance Acqua Prata - JS25BP/0P",
+        "preco": "R$ 899,90",
+        "colecao": "Acqua",
+        "marca": "Technos",
+        "parcelas": "10XdeR$89,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2115MGT/1A",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Performance Racer Dourado - 2115MOD/4D",
+        "preco": "R$ 359,90",
+        "colecao": "Performance",
+        "marca": "Technos",
+        "parcelas": "10XdeR$35,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Performance Skymaster Prata - 6S21AC/0P",
+        "preco": "R$ 639,90",
+        "colecao": "Performance",
+        "marca": "Technos",
+        "parcelas": "10XdeR$63,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Performance Skymaster Dourado - 6S21AB/1D",
+        "preco": "R$ 679,90",
+        "colecao": "Performance",
+        "marca": "Technos",
+        "parcelas": "10XdeR$67,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Skymaster Prata - 6S21AA/1A",
+        "preco": "R$ 639,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$63,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Skymaster Prata - JS26AH/1P",
+        "preco": "R$ 639,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$63,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Skymaster Dourado - JS26AJ/4A",
+        "preco": "R$ 679,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$67,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Skymaster Dourado - JS26AK/4X",
+        "preco": "R$ 679,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$67,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Performance Racer Prata - 2115MOC/1A",
+        "preco": "R$ 279,90",
+        "colecao": "Performance",
+        "marca": "Technos",
+        "parcelas": "10XdeR$27,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Performance Racer Prata - 2115MOB/1P",
+        "preco": "R$ 319,90",
+        "colecao": "Performance",
+        "marca": "Technos",
+        "parcelas": "10XdeR$31,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Performance Racer Dourado - 2115MNZ/4P",
+        "preco": "R$ 299,90",
+        "colecao": "Performance",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Performance Racer Prata - 2115MNY/1B",
+        "preco": "R$ 259,90",
+        "colecao": "Performance",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Performance Racer Dourado - 2305AV/4X",
+        "preco": "R$ 319,90",
+        "colecao": "Performance",
+        "marca": "Technos",
+        "parcelas": "10XdeR$31,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Performance Racer Prata - 2305AU/1A",
+        "preco": "R$ 279,90",
+        "colecao": "Performance",
+        "marca": "Technos",
+        "parcelas": "10XdeR$27,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Performance Racer Dourado - 2305AT/8P",
+        "preco": "R$ 279,90",
+        "colecao": "Performance",
+        "marca": "Technos",
+        "parcelas": "10XdeR$27,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Classic Steel Dourado - 2115MNW/4P",
+        "preco": "R$ 299,90",
+        "colecao": "Classic Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Classic Steel Prata - 2115MNV/1P",
+        "preco": "R$ 279,90",
+        "colecao": "Classic Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$27,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Classic Automatico Dourado - 8205OF/4P",
+        "preco": "R$ 779,90",
+        "colecao": "Automatico",
+        "marca": "Technos",
+        "parcelas": "10XdeR$77,99"
+    },
+    {
+        "nome": "Relógio Technos Automatico Masculino 8205NX/4A",
+        "preco": "R$ 779,00",
+        "colecao": "Automatico",
+        "marca": "Technos",
+        "parcelas": "10XdeR$77,90"
+    },
+    {
+        "nome": "Relógio Technos Masculino Legacy Dourado - JS25BI/4B",
+        "preco": "R$ 959,00",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$95,90"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel 2115MLC/1C",
+        "preco": "R$ 269,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$26,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Classic Steel Dourado - 2115MNP/1D",
+        "preco": "R$ 299,90",
+        "colecao": "Classic Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Classic Steel Dourado - 2115MNQ/0D",
+        "preco": "R$ 259,90",
+        "colecao": "Classic Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Performance Racer Dourado - 2117LAK/1P",
+        "preco": "R$ 299,90",
+        "colecao": "Performance",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Performance Racer Dourado - 2117LAL/1B",
+        "preco": "R$ 299,90",
+        "colecao": "Performance",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel 2115KNQ/1K",
+        "preco": "R$ 269,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$26,99"
+    },
+    {
+        "nome": "Relógio Technos Automatico Masculino 8205NX/4B",
+        "preco": "R$ 624,00",
+        "colecao": "Automatico",
+        "marca": "Technos",
+        "parcelas": "10XdeR$62,40"
+    },
+    {
+        "nome": "Relógio Technos Masculino Performance Acqua Prata - 2315KZQ/0A",
+        "preco": "R$ 688,00",
+        "colecao": "Acqua",
+        "marca": "Technos",
+        "parcelas": "10XdeR$68,80"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2115MGS/4P",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2115MGS/4B",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2115MGR/1B",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Ceramic Masculino JS15EU/1P",
+        "preco": "R$ 720,00",
+        "colecao": "Ceramic",
+        "marca": "Technos",
+        "parcelas": "10XdeR$72,00"
+    },
+    {
+        "nome": "Relógio Technos Slim Masculino GL15AO/1C",
+        "preco": "R$ 416,00",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$41,60"
+    },
+    {
+        "nome": "Relógio Technos Unissex Slim 1L22WI/4P",
+        "preco": "R$ 479,90",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$47,99"
+    },
+    {
+        "nome": "Relógio Technos Unissex Slim GL20AQ/4P",
+        "preco": "R$ 479,90",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$47,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2315KZN/8P - Preto",
+        "preco": "R$ 249,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$24,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Performance Acqua Prata - JS25BQ/8P",
+        "preco": "R$ 859,90",
+        "colecao": "Acqua",
+        "marca": "Technos",
+        "parcelas": "10XdeR$85,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Legacy JS15ER/4A",
+        "preco": "R$ 759,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$75,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel Prata - 2115MLA/1P",
+        "preco": "R$ 259,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Steel Masculino 2115MMJ/0B",
+        "preco": "R$ 269,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$26,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2115MLO/1K - Prata",
+        "preco": "R$ 309,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$30,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2115MGU/8K",
+        "preco": "R$ 175,00",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$17,50"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2115MGT/1P",
+        "preco": "R$ 249,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$24,99"
+    },
+    {
+        "nome": "Relógio Technos Steel Masculino 2115MMH/1B",
+        "preco": "R$ 259,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel 2115MKW/1V",
+        "preco": "R$ 269,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$26,99"
+    },
+    {
+        "nome": "Relógio Technos Carbon Masculino JS15EW/4P",
+        "preco": "R$ 829,90",
+        "colecao": "Carbon",
+        "marca": "Technos",
+        "parcelas": "10XdeR$82,99"
+    },
+    {
+        "nome": "Relógio Technos Riviera Feminino 2115KQQ/4X",
+        "preco": "R$ 459,90",
+        "colecao": "Riviera",
+        "marca": "Technos",
+        "parcelas": "10XdeR$45,99"
+    },
+    {
+        "nome": "Relógio Technos Racer Masculino 2117LAI/1P",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Racer Masculino 2117LAH/1B",
+        "preco": "R$ 229,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$22,99"
+    },
+    {
+        "nome": "Relógio Technos Executive Masculino 2115LAT/4C",
+        "preco": "R$ 429,90",
+        "colecao": "Executive",
+        "marca": "Technos",
+        "parcelas": "10XdeR$42,99"
+    },
+    {
+        "nome": "Relógio Technos Executive Masculino 2115LAS/4K",
+        "preco": "R$ 399,90",
+        "colecao": "Executive",
+        "marca": "Technos",
+        "parcelas": "10XdeR$39,99"
+    },
+    {
+        "nome": "Relógio Technos Executive Masculino 2115LAU/1A",
+        "preco": "R$ 359,90",
+        "colecao": "Executive",
+        "marca": "Technos",
+        "parcelas": "10XdeR$35,99"
+    },
+    {
+        "nome": "Relógio Technos Executive Masculino 2115LAR/4P",
+        "preco": "R$ 399,90",
+        "colecao": "Executive",
+        "marca": "Technos",
+        "parcelas": "10XdeR$39,99"
+    },
+    {
+        "nome": "Relógio Technos Carbon Masculino JS15EX/4P",
+        "preco": "R$ 839,90",
+        "colecao": "Carbon",
+        "marca": "Technos",
+        "parcelas": "10XdeR$83,99"
+    },
+    {
+        "nome": "Relógio Technos Ceramic Masculino JS15ET/4P",
+        "preco": "R$ 839,90",
+        "colecao": "Ceramic",
+        "marca": "Technos",
+        "parcelas": "10XdeR$83,99"
+    },
+    {
+        "nome": "Relógio Technos Golf Masculino 2115LAP/4X",
+        "preco": "R$ 399,90",
+        "colecao": "Golf",
+        "marca": "Technos",
+        "parcelas": "10XdeR$39,99"
+    },
+    {
+        "nome": "Relógio Technos Racer Masculino 2115LAK/1P",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Racer Masculino 2115LAK/1B",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Carbon Masculino JS15EV/1P",
+        "preco": "R$ 789,90",
+        "colecao": "Carbon",
+        "marca": "Technos",
+        "parcelas": "10XdeR$78,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel 2115LAN/4X",
+        "preco": "R$ 299,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel 2115MMU/5B",
+        "preco": "R$ 279,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$27,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2115MMV/4P",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2115MMW/1K",
+        "preco": "R$ 256,00",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,60"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2115MMX/8A",
+        "preco": "R$ 249,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$24,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2115MMY/4K",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Skymaster JS15EY/4P",
+        "preco": "R$ 689,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$68,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Skymaster JS15EZ/5B",
+        "preco": "R$ 709,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$70,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Skymaster JS15FA/1A",
+        "preco": "R$ 649,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$64,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Skymaster JS15FB/4P",
+        "preco": "R$ 699,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$69,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2117LAF/8B",
+        "preco": "R$ 249,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$24,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2117LAJ/8B",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel 2115MNG/4C",
+        "preco": "R$ 329,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$32,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel 2115MNG/4X",
+        "preco": "R$ 299,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Legacy 2035MLA/4P",
+        "preco": "R$ 759,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$75,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Legacy 2035MLB/4A",
+        "preco": "R$ 779,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$77,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Legacy 2035MLC/1P",
+        "preco": "R$ 752,00",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$75,20"
+    },
+    {
+        "nome": "Relógio Technos Masculino Ceramic/Saphire JS25BR/4P",
+        "preco": "R$ 759,90",
+        "colecao": "Ceramic",
+        "marca": "Technos",
+        "parcelas": "10XdeR$75,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Ceramic/Saphire JS25BS/1A",
+        "preco": "R$ 720,00",
+        "colecao": "Ceramic",
+        "marca": "Technos",
+        "parcelas": "10XdeR$72,00"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2315ACO/8R - Preto",
+        "preco": "R$ 249,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$24,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2115MGS/4A - Dourado",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2115MGS/4K - Dourado",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer 2115MGR/1K - Prata",
+        "preco": "R$ 249,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$24,99"
+    },
+    {
+        "nome": "Relógio Technos Skymaster Masculino JS15FC/4P",
+        "preco": "R$ 689,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$68,99"
+    },
+    {
+        "nome": "Relógio Technos Skymaster Masculino JS15FC/4X",
+        "preco": "R$ 689,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$68,99"
+    },
+    {
+        "nome": "Relógio Technos Skymaster Masculino JS15FD/1A",
+        "preco": "R$ 649,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$64,99"
+    },
+    {
+        "nome": "Relógio Technos Vitra Masculino Prata JS15EO/1P",
+        "preco": "R$ 869,90",
+        "colecao": "Vitra",
+        "marca": "Technos",
+        "parcelas": "10XdeR$86,99"
+    },
+    {
+        "nome": "Relógio Technos Steel Masculino 2315KZM/1P",
+        "preco": "R$ 269,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$26,99"
+    },
+    {
+        "nome": "Relógio Technos Steel Masculino 2315KZL/4B",
+        "preco": "R$ 299,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel 2115MKW/1M",
+        "preco": "R$ 269,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$26,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel Prata - 2115MKY/1A",
+        "preco": "R$ 260,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$26,09"
+    },
+    {
+        "nome": "Relógio Technos Masculino Carbon OS20HM/8P",
+        "preco": "R$ 829,90",
+        "colecao": "Carbon",
+        "marca": "Technos",
+        "parcelas": "10XdeR$82,99"
+    },
+    {
+        "nome": "Relógio Technos Legacy Masculino Azul JS26AF/4A",
+        "preco": "R$ 779,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$77,99"
+    },
+    {
+        "nome": "Relógio Technos Vitra Masculino Dourado JS15EP/4X",
+        "preco": "R$ 909,90",
+        "colecao": "Vitra",
+        "marca": "Technos",
+        "parcelas": "10XdeR$90,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Carbon OS20HM/1B",
+        "preco": "R$ 869,90",
+        "colecao": "Carbon",
+        "marca": "Technos",
+        "parcelas": "10XdeR$86,99"
+    },
+    {
+        "nome": "Relógio Technos Steel Masculino 2115LAM/4K",
+        "preco": "R$ 299,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Slim GM10YG/1P",
+        "preco": "R$ 439,90",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$43,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Slim GM10YF/4X",
+        "preco": "R$ 479,90",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$47,99"
+    },
+    {
+        "nome": "Relógio Technos Grandtech OS10CR/4A Dourado",
+        "preco": "R$ 639,90",
+        "colecao": "Grandtech",
+        "marca": "Technos",
+        "parcelas": "10XdeR$63,99"
+    },
+    {
+        "nome": "Relógio Technos Racer 2115KZA/8P Preto",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Racer 2115KYZ/4A Dourado",
+        "preco": "R$ 339,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$33,99"
+    },
+    {
+        "nome": "Relógio Technos Racer 2115KYY/8K Preto",
+        "preco": "R$ 269,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$26,99"
+    },
+    {
+        "nome": "Relógio Technos Racer 2115KYX/1P Prata",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Legacy Masculino OS2ABH/4P",
+        "preco": "R$ 800,00",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$80,00"
+    },
+    {
+        "nome": "Relógio Technos Legacy Masculino OS2ABG/8P",
+        "preco": "R$ 719,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$71,99"
+    },
+    {
+        "nome": "Relógio Technos Racer Masculino 2115MGQ/4A",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Racer Masculino 2115MGO/1B",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Golf Masculino 2115LAO/1A",
+        "preco": "R$ 359,90",
+        "colecao": "Golf",
+        "marca": "Technos",
+        "parcelas": "10XdeR$35,99"
+    },
+    {
+        "nome": "Relógio Technos Grandtech OS10CR/4K Dourado",
+        "preco": "R$ 639,90",
+        "colecao": "Grandtech",
+        "marca": "Technos",
+        "parcelas": "10XdeR$63,99"
+    },
+    {
+        "nome": "Relógio Technos Skymaster Masculino 6P25BM/1K",
+        "preco": "R$ 439,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$43,99"
+    },
+    {
+        "nome": "Relógio Technos Skymaster Masculino 2415CL/4P",
+        "preco": "R$ 639,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$63,99"
+    },
+    {
+        "nome": "Relógio Technos Skymaster Masculino 2415CK/4A",
+        "preco": "R$ 629,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$62,99"
+    },
+    {
+        "nome": "Relógio Technos Skymaster Masculino 2415CJ/0P",
+        "preco": "R$ 589,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$58,99"
+    },
+    {
+        "nome": "Relógio Technos Steel Masculino 2115LAY/1V",
+        "preco": "R$ 269,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$26,99"
+    },
+    {
+        "nome": "Relógio Technos Steel Masculino 2115LAL/0P",
+        "preco": "R$ 269,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$26,99"
+    },
+    {
+        "nome": "Relógio Technos Golf 2305AS/5K Bicolor",
+        "preco": "R$ 509,90",
+        "colecao": "Golf",
+        "marca": "Technos",
+        "parcelas": "10XdeR$50,99"
+    },
+    {
+        "nome": "Relógio Technos Legacy Masculino Prata JS26AD/1P",
+        "preco": "R$ 949,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$94,99"
+    },
+    {
+        "nome": "Relógio Technos Executive Masculino Dourado 2115KZC/4X",
+        "preco": "R$ 399,90",
+        "colecao": "Executive",
+        "marca": "Technos",
+        "parcelas": "10XdeR$39,99"
+    },
+    {
+        "nome": "Relógio Technos Executive Masculino Dourado 2115KZC/4A",
+        "preco": "R$ 429,90",
+        "colecao": "Executive",
+        "marca": "Technos",
+        "parcelas": "10XdeR$42,99"
+    },
+    {
+        "nome": "Relógio Technos Skydiver Masculino T20565/1P",
+        "preco": "R$ 599,90",
+        "colecao": "Skydiver",
+        "marca": "Technos",
+        "parcelas": "10XdeR$59,99"
+    },
+    {
+        "nome": "Relógio Technos Racer 2115KTM/1P Prata",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Racer 2115KTM/1C Prata",
+        "preco": "R$ 289,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$28,99"
+    },
+    {
+        "nome": "Relógio Technos Skydiver T205IX/0P Marrom",
+        "preco": "R$ 559,90",
+        "colecao": "Skydiver",
+        "marca": "Technos",
+        "parcelas": "10XdeR$55,99"
+    },
+    {
+        "nome": "Relógio Technos Racer Masculino Prata 2115KZB/1B",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Racer Masculino Prata 2115KZB/1P",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Racer Masculino Prata 2115KZB/1A",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Automatico 8205NO/5A Bicolor",
+        "preco": "R$ 518,00",
+        "colecao": "Automatico",
+        "marca": "Technos",
+        "parcelas": "10XdeR$51,80"
+    },
+    {
+        "nome": "Relógio Technos Automatico 8205NM/1B Prata",
+        "preco": "R$ 476,00",
+        "colecao": "Automatico",
+        "marca": "Technos",
+        "parcelas": "10XdeR$47,60"
+    },
+    {
+        "nome": "Relógio Technos Racer 2115KZZ/1C Prata",
+        "preco": "R$ 289,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$28,99"
+    },
+    {
+        "nome": "Relógio Technos Racer 2115KZZ/1A Prata",
+        "preco": "R$ 289,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$28,99"
+    },
+    {
+        "nome": "Relógio Technos Racer 2115KTM/1B Prata",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Racer 2315ACL/4P Dourado",
+        "preco": "R$ 409,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$40,99"
+    },
+    {
+        "nome": "Relógio Technos Skydiver T205IW/1P Prata",
+        "preco": "R$ 512,00",
+        "colecao": "Skydiver",
+        "marca": "Technos",
+        "parcelas": "10XdeR$51,20"
+    },
+    {
+        "nome": "Relógio Technos Racer 2315ACH/8P Preto",
+        "preco": "R$ 289,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$28,99"
+    },
+    {
+        "nome": "Relógio Technos Legacy JS15EM/4A Dourado",
+        "preco": "R$ 759,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$75,99"
+    },
+    {
+        "nome": "Relógio Technos Legacy JS15EL/4C Bicolor",
+        "preco": "R$ 779,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$77,99"
+    },
+    {
+        "nome": "Relógio Technos Legacy JS15EK/8P Preto",
+        "preco": "R$ 719,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$71,99"
+    },
+    {
+        "nome": "Relógio Technos Riviera Dourado 2415CH/4X",
+        "preco": "R$ 459,90",
+        "colecao": "Riviera",
+        "marca": "Technos",
+        "parcelas": "10XdeR$45,99"
+    },
+    {
+        "nome": "Relógio Technos Steel 2115KTP/4P Dourado",
+        "preco": "R$ 299,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Analógico - 2115KTC/1P",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Analógico - 2115KTB/8P",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Analógico - 2115KSS/1P",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Golf Analógico - 2115KSP/0K",
+        "preco": "R$ 279,90",
+        "colecao": "Golf",
+        "marca": "Technos",
+        "parcelas": "10XdeR$27,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Golf Analógico - 2115KSO/2C",
+        "preco": "R$ 216,93",
+        "colecao": "Golf",
+        "marca": "Technos",
+        "parcelas": "10XdeR$21,69"
+    },
+    {
+        "nome": "Relógio Technos Skymaster JS15EN/1C Prata",
+        "preco": "R$ 489,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$48,99"
+    },
+    {
+        "nome": "Relógio Technos Executive Masculino 2115KTH/4M Dourado",
+        "preco": "R$ 399,90",
+        "colecao": "Executive",
+        "marca": "Technos",
+        "parcelas": "10XdeR$39,99"
+    },
+    {
+        "nome": "Relógio Technos Executive Masculino 2115KTG/1P Prata",
+        "preco": "R$ 359,90",
+        "colecao": "Executive",
+        "marca": "Technos",
+        "parcelas": "10XdeR$35,99"
+    },
+    {
+        "nome": "Relógio Technos Skydiver Masculino T205FX/1B Prata",
+        "preco": "R$ 639,90",
+        "colecao": "Skydiver",
+        "marca": "Technos",
+        "parcelas": "10XdeR$63,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Golf Analógico - 2115KSO/2A",
+        "preco": "R$ 309,90",
+        "colecao": "Golf",
+        "marca": "Technos",
+        "parcelas": "10XdeR$30,99"
+    },
+    {
+        "nome": "Relógio Technos Carbon Masculino OS1AAU/1C Prata",
+        "preco": "R$ 539,90",
+        "colecao": "Carbon",
+        "marca": "Technos",
+        "parcelas": "10XdeR$53,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Executive 2115KSC/K1C",
+        "preco": "R$ 359,90",
+        "colecao": "Executive",
+        "marca": "Technos",
+        "parcelas": "10XdeR$35,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Legacy Analógico - T205FU/4X",
+        "preco": "R$ 759,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$75,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Grandtech Analógico - 6P25BA/1C",
+        "preco": "R$ 324,00",
+        "colecao": "Grandtech",
+        "marca": "Technos",
+        "parcelas": "10XdeR$32,40"
+    },
+    {
+        "nome": "Relógio Technos Masculino Grandtech Analógico - 6P25AZ/0M",
+        "preco": "R$ 324,00",
+        "colecao": "Grandtech",
+        "marca": "Technos",
+        "parcelas": "10XdeR$32,40"
+    },
+    {
+        "nome": "Relógio Technos Masculino Grandtech Analógico - 6P25AY/4C",
+        "preco": "R$ 245,94",
+        "colecao": "Grandtech",
+        "marca": "Technos",
+        "parcelas": "10XdeR$24,59"
+    },
+    {
+        "nome": "Relógio Technos Masculino Legacy Analógico - JS15BE/8X",
+        "preco": "R$ 909,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$90,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Analógico - 2115KSR/8L",
+        "preco": "R$ 289,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$28,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Analógico - 2115KSR/8Y",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel Analógico - 2035MFC/1A",
+        "preco": "R$ 175,00",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$17,50"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Analógico - 2115KTD/1K",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Racer 2115KSU/1R Prata",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Racer 2115KSU/1Y Prata",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Analógico - 2115KSZ/8A",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Analógico - 6P29AIR/8P",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Slim Analógico - 6P29AIS/5B",
+        "preco": "R$ 449,90",
+        "colecao": "Slim",
+        "marca": "Technos",
+        "parcelas": "10XdeR$44,99"
+    },
+    {
+        "nome": "Relógio Technos Racer 2115KSX/1Y Prata",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Racer 2115KSX/1R Prata",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Racer 2115KSY/1A Prata",
+        "preco": "R$ 309,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$30,99"
+    },
+    {
+        "nome": "Relógio Technos Skymaster JS25BH/1P Prata",
+        "preco": "R$ 649,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$64,99"
+    },
+    {
+        "nome": "Relógio Technos Racer 2115KSQ/1Y Prata",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Analógico - 2115KSV/1R",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Racer Analógico - 2115KSV/1Y",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Skymaster Analógico - 2415CE/4D",
+        "preco": "R$ 496,00",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$49,60"
+    },
+    {
+        "nome": "Relógio Technos Masculino Skymaster Analógico - 6P25BF/4P",
+        "preco": "R$ 559,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$55,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Skymaster Analógico - 6P25BG/1A",
+        "preco": "R$ 528,00",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$52,80"
+    },
+    {
+        "nome": "Relógio Technos Masculino Skymaster Analógico - 6P25BG/1P",
+        "preco": "R$ 528,00",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$52,80"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel 1S13BCTDY/1C",
+        "preco": "R$ 309,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$30,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel 1S13BCTDY/1B",
+        "preco": "R$ 309,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$30,99"
+    },
+    {
+        "nome": "Relógio Technos Legacy 6P29AIM/8A Prata",
+        "preco": "R$ 532,00",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$53,20"
+    },
+    {
+        "nome": "Relógio Technos Racer 2115KSL/1Y Prata",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Racer 2115KSL/1R Prata",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Racer 2115KSL/1P Prata",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Racer 2115KSL/1A Prata",
+        "preco": "R$ 299,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Steel 2115KSK/1C Prata",
+        "preco": "R$ 269,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$26,99"
+    },
+    {
+        "nome": "Relógio Technos Steel 2115KSA/1P Prata",
+        "preco": "R$ 269,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$26,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Steel 1S13BWTDY/4X",
+        "preco": "R$ 299,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Steel Masculino Analógico - 2035MCW/1P",
+        "preco": "R$ 269,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$26,99"
+    },
+    {
+        "nome": "Relógio Technos Skydiver Masculino Ana Digi  - T205FQ/5B",
+        "preco": "R$ 599,90",
+        "colecao": "Skydiver",
+        "marca": "Technos",
+        "parcelas": "10XdeR$59,99"
+    },
+    {
+        "nome": "Relógio Technos Executive Masculino Analógico - 2115KRP/3V",
+        "preco": "R$ 269,90",
+        "colecao": "Executive",
+        "marca": "Technos",
+        "parcelas": "10XdeR$26,99"
+    },
+    {
+        "nome": "Relógio Technos Skydiver Masculino Ana Digi  - T205FQ/5P",
+        "preco": "R$ 599,90",
+        "colecao": "Skydiver",
+        "marca": "Technos",
+        "parcelas": "10XdeR$59,99"
+    },
+    {
+        "nome": "Relógio Technos Racer Masculino Analógico - 2315ABZ/8R",
+        "preco": "R$ 269,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$26,99"
+    },
+    {
+        "nome": "Relógio Technos Racer Masculino Analógico - 2315ABY/1P",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Golf Masculino Analógico - 2115KQU/4C",
+        "preco": "R$ 399,90",
+        "colecao": "Golf",
+        "marca": "Technos",
+        "parcelas": "10XdeR$39,99"
+    },
+    {
+        "nome": "Relógio Technos Golf Masculino Analógico - 2115KQU/4A",
+        "preco": "R$ 399,90",
+        "colecao": "Golf",
+        "marca": "Technos",
+        "parcelas": "10XdeR$39,99"
+    },
+    {
+        "nome": "Relógio Technos Grandtech Masculino Multifunção - 6P29AIC/4C",
+        "preco": "R$ 449,90",
+        "colecao": "Grandtech",
+        "marca": "Technos",
+        "parcelas": "10XdeR$44,99"
+    },
+    {
+        "nome": "Relógio Technos Skydiver Masculino Ana Digi  - T205FL/4P",
+        "preco": "R$ 639,90",
+        "colecao": "Skydiver",
+        "marca": "Technos",
+        "parcelas": "10XdeR$63,99"
+    },
+    {
+        "nome": "Relógio Technos Skydiver Masculino Ana Digi  - T205FL/4A",
+        "preco": "R$ 639,90",
+        "colecao": "Skydiver",
+        "marca": "Technos",
+        "parcelas": "10XdeR$63,99"
+    },
+    {
+        "nome": "Relógio Technos Skydiver Masculino Ana Digi  - T205FM/1C",
+        "preco": "R$ 599,90",
+        "colecao": "Skydiver",
+        "marca": "Technos",
+        "parcelas": "10XdeR$59,99"
+    },
+    {
+        "nome": "Relógio Technos Skydiver Masculino Ana Digi  - T205FM/1A",
+        "preco": "R$ 599,90",
+        "colecao": "Skydiver",
+        "marca": "Technos",
+        "parcelas": "10XdeR$59,99"
+    },
+    {
+        "nome": "Relógio Technos Golf Masculino Analógico - 2115KRM/4C",
+        "preco": "R$ 399,90",
+        "colecao": "Golf",
+        "marca": "Technos",
+        "parcelas": "10XdeR$39,99"
+    },
+    {
+        "nome": "Relógio Technos Golf Masculino Analógico - 2115KRO/1M",
+        "preco": "R$ 369,90",
+        "colecao": "Golf",
+        "marca": "Technos",
+        "parcelas": "10XdeR$36,99"
+    },
+    {
+        "nome": "Relógio Technos Golf Masculino Analógico - 2115KRN/5A",
+        "preco": "R$ 419,90",
+        "colecao": "Golf",
+        "marca": "Technos",
+        "parcelas": "10XdeR$41,99"
+    },
+    {
+        "nome": "Relógio Technos Legacy Masculino Prata 2115KOV/MK1P",
+        "preco": "R$ 469,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$46,99"
+    },
+    {
+        "nome": "Relógio Technos Masculino Riviera - GL10IA/M4P",
+        "preco": "R$ 336,00",
+        "colecao": "Riviera",
+        "marca": "Technos",
+        "parcelas": "10XdeR$33,60"
+    },
+    {
+        "nome": "Relógio Technos Grandtech Masculino Multifunção - 6P22AD/1P",
+        "preco": "R$ 439,90",
+        "colecao": "Grandtech",
+        "marca": "Technos",
+        "parcelas": "10XdeR$43,99"
+    },
+    {
+        "nome": "Relógio Technos Grandtech Masculino Multifunção - 6P29AIF/4P",
+        "preco": "R$ 449,90",
+        "colecao": "Grandtech",
+        "marca": "Technos",
+        "parcelas": "10XdeR$44,99"
+    },
+    {
+        "nome": "Relógio Technos Golf Masculino Analógico - 2115KQS/4K",
+        "preco": "R$ 399,90",
+        "colecao": "Golf",
+        "marca": "Technos",
+        "parcelas": "10XdeR$39,99"
+    },
+    {
+        "nome": "Relógio Technos Racer Masculino Analógico - 2036LNV/1R",
+        "preco": "R$ 197,94",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$19,79"
+    },
+    {
+        "nome": "Relógio Technos Performance - 6P29AHW/1Y",
+        "preco": "R$ 339,90",
+        "colecao": "Performance",
+        "marca": "Technos",
+        "parcelas": "10XdeR$33,99"
+    },
+    {
+        "nome": "Relógio Technos Grandtech Masculino Multifunção - 6P25AP/1M",
+        "preco": "R$ 347,94",
+        "colecao": "Grandtech",
+        "marca": "Technos",
+        "parcelas": "10XdeR$34,79"
+    },
+    {
+        "nome": "Relógio Technos Golf Masculino Analógico - 2115KPR/4X",
+        "preco": "R$ 489,90",
+        "colecao": "Golf",
+        "marca": "Technos",
+        "parcelas": "10XdeR$48,99"
+    },
+    {
+        "nome": "Relógio Technos Militar Masculino Analógico - 2035LYE/1U",
+        "preco": "R$ 359,90",
+        "colecao": "Militar",
+        "marca": "Technos",
+        "parcelas": "10XdeR$35,99"
+    },
+    {
+        "nome": "Relógio Technos Ts Carbon Masculino - 0527AD/8P",
+        "preco": "R$ 729,90",
+        "colecao": "Carbon",
+        "marca": "Technos",
+        "parcelas": "10XdeR$72,99"
+    },
+    {
+        "nome": "Relógio Technos Ts Carbon Masculino Cronógrafo - OS1AAZ/0C",
+        "preco": "R$ 949,90",
+        "colecao": "Carbon",
+        "marca": "Technos",
+        "parcelas": "10XdeR$94,99"
+    },
+    {
+        "nome": "Relógio Technos Skydiver Masculino Ana Digi  - T20557/9B",
+        "preco": "R$ 519,90",
+        "colecao": "Skydiver",
+        "marca": "Technos",
+        "parcelas": "10XdeR$51,99"
+    },
+    {
+        "nome": "Relógio Technos Golf Masculino Analógico - 2115RV/4M",
+        "preco": "R$ 489,90",
+        "colecao": "Golf",
+        "marca": "Technos",
+        "parcelas": "10XdeR$48,99"
+    },
+    {
+        "nome": "Relógio Technos Steel Masculino Analógico - 2115GW/5K",
+        "preco": "R$ 349,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$34,99"
+    },
+    {
+        "nome": "Relógio Technos Skymaster Masculino Analógico - 2115GS/1P",
+        "preco": "R$ 379,90",
+        "colecao": "Skymaster",
+        "marca": "Technos",
+        "parcelas": "10XdeR$37,99"
+    },
+    {
+        "nome": "Relógio Technos Racer Masculino Analógico - 2115GU/1R",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Skydiver Masculino Ana Digi  - T20557/1P",
+        "preco": "R$ 519,90",
+        "colecao": "Skydiver",
+        "marca": "Technos",
+        "parcelas": "10XdeR$51,99"
+    },
+    {
+        "nome": "Relógio Technos Solar Masculino Cronógrafo - VS75AA/1C",
+        "preco": "R$ 659,90",
+        "colecao": "Solar",
+        "marca": "Technos",
+        "parcelas": "10XdeR$65,99"
+    },
+    {
+        "nome": "Relógio Technos Legacy Masculino Cronógrafo - OS20IK/4X",
+        "preco": "R$ 759,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$75,99"
+    },
+    {
+        "nome": "Relógio Technos Ts Carbon Masculino Cronógrafo - OS1AAS/1P",
+        "preco": "R$ 639,90",
+        "colecao": "Carbon",
+        "marca": "Technos",
+        "parcelas": "10XdeR$63,99"
+    },
+    {
+        "nome": "Relógio Technos Acqua Masculino Cronógrafo - OS10EV/8L",
+        "preco": "R$ 619,90",
+        "colecao": "Acqua",
+        "marca": "Technos",
+        "parcelas": "10XdeR$61,99"
+    },
+    {
+        "nome": "Relógio Technos Acqua Masculino Cronógrafo - OS10EP/8P",
+        "preco": "R$ 619,90",
+        "colecao": "Acqua",
+        "marca": "Technos",
+        "parcelas": "10XdeR$61,99"
+    },
+    {
+        "nome": "Relógio Technos Legacy Masculino Cronógrafo - JS15BA/3C",
+        "preco": "R$ 969,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$96,99"
+    },
+    {
+        "nome": "Relógio Technos Legacy Masculino Cronógrafo - JS15AO/4X",
+        "preco": "R$ 759,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$75,99"
+    },
+    {
+        "nome": "Relógio Technos Solar  Masculino Dourado - AS37AB/4B",
+        "preco": "R$ 969,90",
+        "colecao": "Solar",
+        "marca": "Technos",
+        "parcelas": "10XdeR$96,99"
+    },
+    {
+        "nome": "Relógio Technos Legacy Masculino Analógico - 2315ABL/4P",
+        "preco": "R$ 569,90",
+        "colecao": "Legacy",
+        "marca": "Technos",
+        "parcelas": "10XdeR$56,99"
+    },
+    {
+        "nome": "Relógio Technos Acqua Masculino Analógico - 2115KPA/1Y",
+        "preco": "R$ 529,90",
+        "colecao": "Acqua",
+        "marca": "Technos",
+        "parcelas": "10XdeR$52,99"
+    },
+    {
+        "nome": "Relógio Technos Executive Masculino Analógico - 2115KOW/4K",
+        "preco": "R$ 529,90",
+        "colecao": "Executive",
+        "marca": "Technos",
+        "parcelas": "10XdeR$52,99"
+    },
+    {
+        "nome": "Relógio Technos Racer Masculino Analógico - 2115KOU/1P",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Steel Masculino Analógico - 2115KNO/2P",
+        "preco": "R$ 259,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Acqua Masculino Analógico - 2115KMB/1P",
+        "preco": "R$ 528,00",
+        "colecao": "Acqua",
+        "marca": "Technos",
+        "parcelas": "10XdeR$52,80"
+    },
+    {
+        "nome": "Relógio Technos Golf Masculino Analógico - 2105AU/4X",
+        "preco": "R$ 399,90",
+        "colecao": "Golf",
+        "marca": "Technos",
+        "parcelas": "10XdeR$39,99"
+    },
+    {
+        "nome": "Relógio Technos Steel Masculino Analógico - 2035LRU/5K",
+        "preco": "R$ 259,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Steel Masculino Analógico - 2015BYYTD/4B",
+        "preco": "R$ 299,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Ts Digiana Masculino Ana Digi  - 0527AB/4P",
+        "preco": "R$ 849,90",
+        "colecao": "Ts Digiana",
+        "marca": "Technos",
+        "parcelas": "10XdeR$84,99"
+    },
+    {
+        "nome": "Relógio Technos Ts Carbon Masculino Cronógrafo - OS1AAU/1A",
+        "preco": "R$ 559,90",
+        "colecao": "Carbon",
+        "marca": "Technos",
+        "parcelas": "10XdeR$55,99"
+    },
+    {
+        "nome": "Relógio Technos Skydiver Masculino Ana Digi  - T205FG/4P",
+        "preco": "R$ 809,90",
+        "colecao": "Skydiver",
+        "marca": "Technos",
+        "parcelas": "10XdeR$80,99"
+    },
+    {
+        "nome": "Relógio Technos Ts Carbon Masculino Cronógrafo - OS2AAK/1K",
+        "preco": "R$ 809,90",
+        "colecao": "Carbon",
+        "marca": "Technos",
+        "parcelas": "10XdeR$80,99"
+    },
+    {
+        "nome": "Relógio Technos Racer Masculino Multifunção - 6P29AHL/1P",
+        "preco": "R$ 469,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$46,99"
+    },
+    {
+        "nome": "Relógio Technos Racer Masculino Multifunção - 6P29AHJ/1A",
+        "preco": "R$ 369,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$36,99"
+    },
+    {
+        "nome": "Relógio Technos Golf Masculino Analógico - 2115TT/4P",
+        "preco": "R$ 489,90",
+        "colecao": "Golf",
+        "marca": "Technos",
+        "parcelas": "10XdeR$48,99"
+    },
+    {
+        "nome": "Relógio Technos Steel Masculino Analógico - 2015BZE/2B",
+        "preco": "R$ 309,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$30,99"
+    },
+    {
+        "nome": "Relógio Technos Golf Masculino Analógico - 2305AF/4X",
+        "preco": "R$ 489,90",
+        "colecao": "Golf",
+        "marca": "Technos",
+        "parcelas": "10XdeR$48,99"
+    },
+    {
+        "nome": "Relógio Technos Golf Masculino Analógico - 2315YJ/4P",
+        "preco": "R$ 399,90",
+        "colecao": "Golf",
+        "marca": "Technos",
+        "parcelas": "10XdeR$39,99"
+    },
+    {
+        "nome": "Relógio Technos Steel Masculino Analógico - 2115TF/4X",
+        "preco": "R$ 299,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Racer Masculino Analógico - 2035XH/1P",
+        "preco": "R$ 259,90",
+        "colecao": "Racer",
+        "marca": "Technos",
+        "parcelas": "10XdeR$25,99"
+    },
+    {
+        "nome": "Relógio Technos Steel Masculino Analógico - 2115GR/4X",
+        "preco": "R$ 299,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$29,99"
+    },
+    {
+        "nome": "Relógio Technos Steel Masculino Analógico - 2035JE/1P",
+        "preco": "R$ 269,90",
+        "colecao": "Steel",
+        "marca": "Technos",
+        "parcelas": "10XdeR$26,99"
+    },
+    {
+        "nome": "Relógio Technos Riviera Masculino Analógico - 2115EF/4X",
+        "preco": "R$ 459,90",
+        "colecao": "Riviera",
+        "marca": "Technos",
+        "parcelas": "10XdeR$45,99"
+    },
+    {
+        "nome": "Relógio Technos Executive Masculino Analógico - 1S13BB/5K",
+        "preco": "R$ 221,94",
+        "colecao": "Executive",
+        "marca": "Technos",
+        "parcelas": "10XdeR$22,19"
+    }
+]
